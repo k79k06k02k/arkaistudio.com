@@ -24,3 +24,7 @@ export function uniqueSorted(values: string[]) {
 export function stripTrailingSlash(path: string) {
   return path.length > 1 ? path.replace(/\/$/, "") : path;
 }
+
+export function projectPath(slug: string) {
+  return `/portfolio/${slug}/`;
+}

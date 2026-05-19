@@ -63,8 +63,8 @@ credentials, mail settings, and API tokens out of git.
 ## Content Notes
 
 - `/portfolio/` is the public portfolio index.
-- Project detail pages keep their legacy `/blog/showcases/portfolio/.../`
-  paths so older links continue to work.
+- Project detail pages use `/portfolio/{slug}/`.
+- Older `/blog/showcases/...` URLs redirect to the canonical portfolio routes.
 - Legacy blog pages remain static archives. They are not the primary product
   surface of the site.
 - Migration tooling is intentionally not part of the active project workflow.

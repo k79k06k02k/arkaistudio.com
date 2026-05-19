@@ -1,50 +1,17 @@
 ---
-import { getCollection, render } from "astro:content";
-import BaseLayout from "../../../../layouts/BaseLayout.astro";
-import ProjectMediaCarousel from "../../../../components/ProjectMediaCarousel.astro";
-import { formatDate } from "../../../../utils/content";
+import { getCollection } from "astro:content";
+import RedirectPage from "../../../../components/RedirectPage.astro";
+import { projectPath } from "../../../../utils/content";
 
 export async function getStaticPaths() {
   const projects = await getCollection("projects", ({ data }) => !data.draft);
   return projects.map((project) => ({
     params: { slug: project.data.legacySlug },
-    props: { project },
+    props: { target: projectPath(project.data.legacySlug) },
   }));
 }
 
-const { project } = Astro.props;
-const { Content } = await render(project);
-const mediaImages = [project.data.featuredImage, ...project.data.gallery].filter(
-  (image): image is string => Boolean(image),
-);
-const hasRichMedia = project.data.gallery.length > 0 || project.data.videos.length > 0;
+const { target } = Astro.props;
 ---
 
-<BaseLayout
-  title={project.data.title}
-  description={project.data.description}
-  canonicalPath={project.data.legacyPath + "/"}
-  image={project.data.featuredImage}
->
-  <article class="article-shell project-detail">
-    <header class="article-header">
-      <p class="eyebrow">{project.data.projectTypes.join(" / ")}</p>
-      <h1>{project.data.title}</h1>
-      <p class="article-meta">
-        Portfolio date <time datetime={project.data.date.toISOString()}>{formatDate(project.data.date)}</time>
-      </p>
-    </header>
-    {
-      hasRichMedia ? (
-        <ProjectMediaCarousel title={project.data.title} images={mediaImages} videos={project.data.videos} />
-      ) : (
-        project.data.featuredImage && (
-          <img class="article-hero-image" src={project.data.featuredImage} alt="" loading="eager" />
-        )
-      )
-    }
-    <div class="prose">
-      <Content />
-    </div>
-  </article>
-</BaseLayout>
+<RedirectPage to={target} title="Redirecting to portfolio" />

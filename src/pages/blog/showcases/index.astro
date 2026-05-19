@@ -1,18 +1,5 @@
 ---
-import { getCollection } from "astro:content";
-import BaseLayout from "../../../layouts/BaseLayout.astro";
-import PortfolioArchive from "../../../components/PortfolioArchive.astro";
-import { byNewest, uniqueSorted } from "../../../utils/content";
-
-const projects = (await getCollection("projects", ({ data }) => !data.draft)).sort(byNewest);
-const projectTypes = uniqueSorted(projects.flatMap((project) => project.data.projectTypes));
+import RedirectPage from "../../../components/RedirectPage.astro";
 ---
 
-<BaseLayout
-  title="Portfolio"
-  description="ARKAI Studio game, tool, and production portfolio."
-  canonicalPath="/portfolio/"
-  pagefindBody={false}
->
-  <PortfolioArchive projects={projects} projectTypes={projectTypes} />
-</BaseLayout>
+<RedirectPage to="/portfolio/" title="Redirecting to portfolio" />

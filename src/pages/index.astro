@@ -3,14 +3,14 @@ import { getCollection } from "astro:content";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import SocialLinks from "../components/SocialLinks.astro";
 import { FEATURED_REPOS, SITE } from "../config";
-import { stripTrailingSlash } from "../utils/content";
+import { projectPath } from "../utils/content";
 
 const experience = [
   {
     period: "Dec 2023 - Present",
     title: "Senior Game Engineer",
     context: "MEandMine",
-    portfolioPaths: ["/blog/showcases/portfolio/meandmine-emotion-lab-for-kids/"],
+    portfolioSlugs: ["meandmine-emotion-lab-for-kids"],
     summary:
       "Built GenAI features for EdTech products using Gemini, OpenAI, and Vertex AI RAG. Ported an iOS game to WebGL, cut the initial download from ~700 MB to a 15 MB bootstrap package, and kept runtime memory under 150 MB at 30 FPS.",
   },
@@ -18,7 +18,7 @@ const experience = [
     period: "Aug 2023 - Dec 2023",
     title: "Senior Game Engineer",
     context: "S.G.Arts",
-    portfolioPaths: [],
+    portfolioSlugs: [],
     summary:
       "Cut resource-loading overhead by 60% through rendering and asset pipeline optimization. Built prototypes, led programming schedules, improved workflows, and delivered store, progression, task, and notification systems.",
   },
@@ -26,7 +26,7 @@ const experience = [
     period: "Jul 2022 - May 2023",
     title: "Senior Game Engineer",
     context: "JKOPay",
-    portfolioPaths: [],
+    portfolioSlugs: [],
     summary:
       "Owned 6 production areas: multiplayer sync, character control, camera control, pet interactions, UI/resource foundations, and packaging support. Added performance reports and handover documentation for long-term maintenance.",
   },
@@ -34,7 +34,7 @@ const experience = [
     period: "Jul 2019 - Jun 2022",
     title: "Lead Game Engineer",
     context: "IGG",
-    portfolioPaths: ["/blog/showcases/portfolio/myth-saga/"],
+    portfolioSlugs: ["myth-saga"],
     summary:
       "Led a sub-10 engineer programming team for nearly 3 years. Owned scheduling, cross-discipline coordination, technical direction, mentoring, shared module architecture, automation, and code review standards.",
   },
@@ -42,7 +42,7 @@ const experience = [
     period: "Sep 2018 - Jul 2019",
     title: "Senior Game Engineer",
     context: "IGG",
-    portfolioPaths: ["/blog/showcases/portfolio/monster-fable/"],
+    portfolioSlugs: ["monster-fable"],
     summary:
       "Delivered 9 production systems: core infrastructure, network tools, debug tools, data table editors, UI framework, prefab lightmap workflows, resource packaging, dynamic downloads, and AR Foundation features.",
   },
@@ -50,23 +50,18 @@ const experience = [
     period: "Sep 2016 - Jun 2018",
     title: "Senior Game Engineer",
     context: "Linekong Interactive Group",
-    portfolioPaths: [
-      "/blog/showcases/portfolio/supercharged/",
-      "/blog/showcases/portfolio/independence-day-extinction/",
-    ],
+    portfolioSlugs: ["supercharged", "independence-day-extinction"],
     summary:
       "Built invitation codes, PvP matchmaking, AI systems, and editor tools. Integrated 5 native service areas across Android and iOS plugins: deep links, voice, analytics, push notifications, and QR code flows.",
   },
 ];
 
 const projects = await getCollection("projects", ({ data }) => !data.draft);
-const projectByLegacyPath = new Map(
-  projects.map((project) => [stripTrailingSlash(project.data.legacyPath), project]),
-);
+const projectBySlug = new Map(projects.map((project) => [project.data.legacySlug, project]));
 
-function resolvePortfolioProjects(paths: string[]) {
-  return paths.flatMap((path) => {
-    const project = projectByLegacyPath.get(stripTrailingSlash(path));
+function resolvePortfolioProjects(slugs: string[]) {
+  return slugs.flatMap((slug) => {
+    const project = projectBySlug.get(slug);
     const image = project?.data.featuredImage ?? project?.data.gallery[0] ?? project?.data.videos[0]?.cover;
 
     if (!project || !image) {
@@ -75,7 +70,7 @@ function resolvePortfolioProjects(paths: string[]) {
 
     return [
       {
-        href: project.data.legacyPath + "/",
+        href: projectPath(project.data.legacySlug),
         image,
         title: project.data.title,
       },
@@ -85,7 +80,7 @@ function resolvePortfolioProjects(paths: string[]) {
 
 const experienceItems = experience.map((item) => ({
   ...item,
-  portfolioProjects: resolvePortfolioProjects(item.portfolioPaths),
+  portfolioProjects: resolvePortfolioProjects(item.portfolioSlugs),
 }));
 
 const featuredRepos = FEATURED_REPOS.slice(0, 3);

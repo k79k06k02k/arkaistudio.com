@@ -52,7 +52,7 @@ Required version: Unity 3.5.7 or later.
 
 ### Instant Screenshot
 
-<iframe loading="lazy" width="648" height="365" src="https://www.youtube.com/embed/iedVOpv9ODc" allowfullscreen="" title="Embedded YouTube video"></iframe>
+<iframe loading="lazy" width="648" height="365" src="https://www.youtube-nocookie.com/embed/iedVOpv9ODc" allowfullscreen="" referrerpolicy="strict-origin-when-cross-origin" sandbox="allow-scripts allow-same-origin allow-presentation allow-popups" title="Embedded YouTube video"></iframe>
 
 Instant Screenshot captures high-resolution images through a Camera.
 
@@ -64,7 +64,7 @@ Required version: Unity 4.5.5 or later.
 
 ### Sorting View (Sprite sorting management)
 
-<iframe loading="lazy" width="648" height="365" src="https://www.youtube.com/embed/F9v-ARqfe-U" allowfullscreen="" title="Embedded YouTube video"></iframe>
+<iframe loading="lazy" width="648" height="365" src="https://www.youtube-nocookie.com/embed/F9v-ARqfe-U" allowfullscreen="" referrerpolicy="strict-origin-when-cross-origin" sandbox="allow-scripts allow-same-origin allow-presentation allow-popups" title="Embedded YouTube video"></iframe>
 
 Sorting View displays the Sorting Layer and Order in Layer for current Sprite objects, and lets you modify them.
 
@@ -86,7 +86,7 @@ Required version: Unity 4.0.0 or later.
 
 ### A\* Pathfinding Project Free (A\* road patrol system free version)
 
-<iframe loading="lazy" width="648" height="365" src="https://www.youtube.com/embed/hmx1sx6ezQA" allowfullscreen="" title="Embedded YouTube video"></iframe>
+<iframe loading="lazy" width="648" height="365" src="https://www.youtube-nocookie.com/embed/hmx1sx6ezQA" allowfullscreen="" referrerpolicy="strict-origin-when-cross-origin" sandbox="allow-scripts allow-same-origin allow-presentation allow-popups" title="Embedded YouTube video"></iframe>
 
 A* Pathfinding Project Free helps create patrol types, paths, and pathfinding behavior quickly.
 
@@ -98,7 +98,7 @@ Required version: Unity 5.1.0 or later.
 
 ### Cinema Themes 2 (Camera Effects)
 
-<iframe loading="lazy" width="648" height="365" src="https://www.youtube.com/embed/QR2nWGzlrJo" allowfullscreen="" title="Embedded YouTube video"></iframe>
+<iframe loading="lazy" width="648" height="365" src="https://www.youtube-nocookie.com/embed/QR2nWGzlrJo" allowfullscreen="" referrerpolicy="strict-origin-when-cross-origin" sandbox="allow-scripts allow-same-origin allow-presentation allow-popups" title="Embedded YouTube video"></iframe>
 
 Cinema Themes 2 applies camera effects such as nostalgic, night, beach, and arctic looks.
 

@@ -1,11 +1,13 @@
 ---
+import { getCollection } from "astro:content";
 import BaseLayout from "../layouts/BaseLayout.astro";
+import PortfolioArchive from "../components/PortfolioArchive.astro";
+import { byNewest, uniqueSorted } from "../utils/content";
+
+const projects = (await getCollection("projects", ({ data }) => !data.draft)).sort(byNewest);
+const projectTypes = uniqueSorted(projects.flatMap((project) => project.data.projectTypes));
 ---
 
-<BaseLayout title="Portfolio" description="ARKAI Studio portfolio." pagefindBody={false}>
-  <section class="page-hero narrow">
-    <p class="eyebrow">Portfolio</p>
-    <h1>Selected ARKAI Studio work.</h1>
-    <p class="lede"><a href="/blog/showcases/">Open portfolio</a>.</p>
-  </section>
+<BaseLayout title="Portfolio" description="ARKAI Studio game, tool, and production portfolio.">
+  <PortfolioArchive projects={projects} projectTypes={projectTypes} />
 </BaseLayout>

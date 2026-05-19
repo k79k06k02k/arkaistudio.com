@@ -43,7 +43,7 @@ draft: false
 
 This tutorial is presented as a video. It was my first attempt at video-based teaching, so feedback was welcome. If this format worked, I planned to use it for the rest of the series.
 
-<iframe loading="lazy" width="648" height="365" src="https://www.youtube.com/embed/-_jw6gkmgDg" allowfullscreen="" title="Embedded YouTube video"></iframe>
+<iframe loading="lazy" width="648" height="365" src="https://www.youtube-nocookie.com/embed/-_jw6gkmgDg" allowfullscreen="" referrerpolicy="strict-origin-when-cross-origin" sandbox="allow-scripts allow-same-origin allow-presentation allow-popups" title="Embedded YouTube video"></iframe>
 
 ### Script
 

@@ -50,7 +50,7 @@ _Kevin Chen founded Route 59 Games in 2015 to create narrative games that combin
 
 ### Game case: Necrobarista
 
-<iframe loading="lazy" width="648" height="365" src="https://www.youtube.com/embed/npt80bWJmlQ" allowfullscreen="" title="Embedded YouTube video"></iframe>
+<iframe loading="lazy" width="648" height="365" src="https://www.youtube-nocookie.com/embed/npt80bWJmlQ" allowfullscreen="" referrerpolicy="strict-origin-when-cross-origin" sandbox="allow-scripts allow-same-origin allow-presentation allow-popups" title="Embedded YouTube video"></iframe>
 
 ### Quick testing with editing tools
 

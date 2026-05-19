@@ -1,0 +1,22 @@
+---
+import ProjectCard from "./ProjectCard.astro";
+import type { Project } from "../utils/content";
+
+interface Props {
+  projects: Project[];
+  projectTypes: string[];
+}
+
+const { projects, projectTypes } = Astro.props;
+---
+
+<section class="page-hero portfolio-hero narrow">
+  <p class="eyebrow">Portfolio</p>
+  <h1>Selected work.</h1>
+  <p class="lede">Games, tools, jams, and production systems.</p>
+  <div class="tag-row">{projectTypes.map((type) => <span>{type}</span>)}</div>
+</section>
+
+<section class="project-grid">
+  {projects.map((project) => <ProjectCard project={project} />)}
+</section>

@@ -6,7 +6,8 @@ Personal portfolio site for ARKAI Studio, built with Astro and deployed to GitHu
 
 - English-first portfolio and professional profile.
 - Portfolio index at `/portfolio/`.
-- Static project pages under `/blog/showcases/portfolio/.../` for legacy URL compatibility.
+- Project pages under `/portfolio/{slug}/`.
+- Older `/blog/showcases/...` URLs redirect to the canonical portfolio routes.
 - Legacy blog pages are kept as static archives so old links continue to work, but they are not the main product surface.
 - Pagefind static search, RSS, sitemap, OpenGraph metadata, and local media assets.
 

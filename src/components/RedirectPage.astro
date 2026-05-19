@@ -1,0 +1,29 @@
+---
+import { SITE } from "../config";
+
+interface Props {
+  to: string;
+  title?: string;
+}
+
+const { to, title = "Redirecting..." } = Astro.props;
+const canonical = new URL(to, SITE.url);
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex" />
+    <meta http-equiv="refresh" content={`0;url=${to}`} />
+    <link rel="canonical" href={canonical} />
+    <title>{title}</title>
+    <script is:inline define:vars={{ to }}>
+      window.location.replace(to);
+    </script>
+  </head>
+  <body>
+    <p>Redirecting to <a href={to}>{to}</a>.</p>
+  </body>
+</html>

@@ -1,15 +1,17 @@
 ---
 import type { Project } from "../utils/content";
+import { projectPath } from "../utils/content";
 
 interface Props {
   project: Project;
 }
 
 const { project } = Astro.props;
+const href = projectPath(project.data.legacySlug);
 ---
 
 <article class="project-card">
-  <a class="project-image" href={project.data.legacyPath + "/"}>
+  <a class="project-image" href={href}>
     {
       project.data.featuredImage ? (
         <img src={project.data.featuredImage} alt="" loading="lazy" />
@@ -20,7 +22,7 @@ const { project } = Astro.props;
   </a>
   <div class="project-body">
     <p class="card-kicker">{project.data.projectTypes.join(" / ")}</p>
-    <h2><a href={project.data.legacyPath + "/"}>{project.data.title}</a></h2>
+    <h2><a href={href}>{project.data.title}</a></h2>
     <p>{project.data.summary}</p>
   </div>
 </article>

@@ -1,6 +1,4 @@
 ---
-import { SITE } from "../config";
-
 const nav = [
   {
     href: "/portfolio/",
@@ -17,11 +15,18 @@ const currentPath = Astro.url.pathname;
 <header class="site-header">
   <a class="brand" href="/" aria-label="ARKAI Studio home">
     <img
-      class="brand-lockup"
-      src="/assets/brand/arkai-lockup-white.png"
-      alt={SITE.title}
-      width="2446"
-      height="760"
+      class="brand-mark"
+      src="/assets/brand/arkai-logo.png"
+      alt=""
+      width="1200"
+      height="752"
+    />
+    <img
+      class="brand-wordmark"
+      src="/assets/brand/arkai-wordmark-white.png"
+      alt=""
+      width="2400"
+      height="213"
     />
   </a>
   <nav aria-label="Primary navigation">

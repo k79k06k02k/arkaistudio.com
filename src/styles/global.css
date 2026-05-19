@@ -93,21 +93,40 @@ main {
 .brand {
   display: inline-flex;
   align-items: center;
+  min-width: 0;
+  gap: 12px;
   text-decoration: none;
 }
 
-.brand-lockup {
+.brand-mark,
+.brand-wordmark {
   display: block;
-  width: 210px;
   height: auto;
+  flex: 0 0 auto;
+}
+
+.brand-mark {
+  width: 48px;
+}
+
+.brand-wordmark {
+  width: min(270px, 34vw);
 }
 
 .brand:hover {
   opacity: 0.72;
 }
 
-.footer-brand-lockup {
-  width: 178px;
+.footer-brand {
+  gap: 10px;
+}
+
+.footer-brand-mark {
+  width: 42px;
+}
+
+.footer-brand-wordmark {
+  width: min(230px, 32vw);
 }
 
 .site-header nav,
@@ -1077,8 +1096,16 @@ main {
     grid-template-columns: 1fr;
   }
 
-  .brand-lockup {
-    width: 178px;
+  .brand {
+    gap: 10px;
+  }
+
+  .brand-mark {
+    width: 42px;
+  }
+
+  .brand-wordmark {
+    width: min(210px, calc(100vw - 92px));
   }
 
   .profile-hero {

@@ -179,11 +179,13 @@ const items =
 
         const title = slide.dataset.videoTitle ?? "Embedded YouTube video";
         const iframe = document.createElement("iframe");
-        iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0`;
+        iframe.src = `https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1&rel=0&playsinline=1`;
         iframe.title = title;
         iframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
         iframe.allowFullscreen = true;
         iframe.loading = "lazy";
+        iframe.referrerPolicy = "strict-origin-when-cross-origin";
+        iframe.setAttribute("sandbox", "allow-scripts allow-same-origin allow-presentation allow-popups");
 
         const frame = slide.querySelector(".project-video-frame");
         if (!frame) return;

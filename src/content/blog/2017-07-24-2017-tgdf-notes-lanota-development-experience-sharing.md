@@ -50,7 +50,7 @@ _Chun-Chuan Tu is the founder and programmer of the independent team Noxy Games.
 
 ### Game case: Lanota
 
-<iframe loading="lazy" width="648" height="365" src="https://www.youtube.com/embed/9OhwIqVHbX0" allowfullscreen="" title="Embedded YouTube video"></iframe>
+<iframe loading="lazy" width="648" height="365" src="https://www.youtube-nocookie.com/embed/9OhwIqVHbX0" allowfullscreen="" referrerpolicy="strict-origin-when-cross-origin" sandbox="allow-scripts allow-same-origin allow-presentation allow-popups" title="Embedded YouTube video"></iframe>
 
 ### Team composition
 

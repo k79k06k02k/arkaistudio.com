@@ -50,7 +50,7 @@ _Hans Chen graduated from the Department of Industrial and Commercial Design at 
 
 ### Game case: Detention
 
-<iframe loading="lazy" width="648" height="365" src="https://www.youtube.com/embed/Yjqin-0iq8Y" allowfullscreen="" title="Embedded YouTube video"></iframe>
+<iframe loading="lazy" width="648" height="365" src="https://www.youtube-nocookie.com/embed/Yjqin-0iq8Y" allowfullscreen="" referrerpolicy="strict-origin-when-cross-origin" sandbox="allow-scripts allow-same-origin allow-presentation allow-popups" title="Embedded YouTube video"></iframe>
 
 ### Game type
 

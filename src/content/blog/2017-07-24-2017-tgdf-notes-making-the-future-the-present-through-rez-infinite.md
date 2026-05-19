@@ -50,13 +50,13 @@ _Tetsuya Mizuguchi is known for Sega Rally Championship, Space Channel 5, Rez, L
 
 ### 2001: Rez launched on console
 
-<iframe loading="lazy" width="648" height="365" src="https://www.youtube.com/embed/wff2ouHmazE" allowfullscreen="" title="Embedded YouTube video"></iframe>
+<iframe loading="lazy" width="648" height="365" src="https://www.youtube-nocookie.com/embed/wff2ouHmazE" allowfullscreen="" referrerpolicy="strict-origin-when-cross-origin" sandbox="allow-scripts allow-same-origin allow-presentation allow-popups" title="Embedded YouTube video"></iframe>
 
 ### 2016: Rez Infinite launched on PS4 and PS VR
 
 After 15 years, PS VR pushed the experience into a stronger form.
 
-<iframe loading="lazy" width="648" height="365" src="https://www.youtube.com/embed/YlDxEOwj5j8" allowfullscreen="" title="Embedded YouTube video"></iframe>
+<iframe loading="lazy" width="648" height="365" src="https://www.youtube-nocookie.com/embed/YlDxEOwj5j8" allowfullscreen="" referrerpolicy="strict-origin-when-cross-origin" sandbox="allow-scripts allow-same-origin allow-presentation allow-popups" title="Embedded YouTube video"></iframe>
 
 ### What the game communicates
 

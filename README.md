@@ -1,62 +1,54 @@
 # ARKAI Studio
 
-Static Astro migration of the ARKAI Studio WordPress blog and portfolio.
+Personal portfolio site for ARKAI Studio, built with Astro and deployed to GitHub Pages.
 
-## What is included
+## Scope
 
-- Astro static site targeting GitHub Pages.
-- 25 migrated blog posts under preserved `/blog/YYYY/MM/DD/.../` URLs.
-- 22 migrated portfolio entries under preserved `/blog/showcases/portfolio/.../` URLs.
-- Compatibility alias pages for older numeric WordPress links such as `/blog/190/unity/.../`.
-- Local media copied from the WordPress backup when available, with network download fallback.
-- RSS, sitemap, OpenGraph metadata, and Pagefind static search.
+- English-first portfolio and professional profile.
+- Portfolio index at `/portfolio/`.
+- Static project pages under `/blog/showcases/portfolio/.../` for legacy URL compatibility.
+- Legacy blog pages are kept as static archives so old links continue to work, but they are not the main product surface.
+- Pagefind static search, RSS, sitemap, OpenGraph metadata, and local media assets.
+
+## Stack
+
+- Astro
+- TypeScript
+- MDX/content collections
+- Pagefind
+- GitHub Actions
+- GitHub Pages
 
 ## Commands
 
 ```bash
 pnpm install
-pnpm run migrate
-pnpm run validate:migration
+pnpm run dev
 pnpm run check
 pnpm run build
-pnpm run dev
+pnpm run preview
 ```
 
-The migration script uses this local backup by default:
+## Deployment
 
-```bash
-/Users/chenzhikai/Downloads/2023-05-17_03-01-37_RRDZK2KA01
+The site deploys from `main` through `.github/workflows/deploy.yml`.
+
+The GitHub Pages custom domain is configured by:
+
+```txt
+public/CNAME
 ```
 
-Override it when needed:
-
-```bash
-WORDPRESS_BACKUP_ROOT=/path/to/wordpress-backup pnpm run migrate
-```
-
-Do not commit `wp-config.php`, SQL dumps, or full WordPress backups. They can contain credentials and obsolete platform baggage.
-
-## GitHub Pages
-
-The site is configured for:
+Current canonical domain:
 
 ```txt
 www.arkaistudio.com
 ```
 
-GitHub Pages DNS target:
+DNS is managed outside this repository. Keep mail records and domain settings in the registrar/DNS provider; do not commit provider exports or credentials here.
 
-```txt
-www CNAME k79k06k02k.github.io
-```
+## Repository Hygiene
 
-Apex domain records for `arkaistudio.com` should use GitHub Pages A records:
-
-```txt
-185.199.108.153
-185.199.109.153
-185.199.110.153
-185.199.111.153
-```
-
-Keep existing MX records if email still runs through DreamHost or MailChannels. Do not cancel DreamHost hosting until the deployed GitHub Pages site has HTTPS enabled and the old URLs have been checked.
+- Do not commit `.env` files, private keys, API tokens, SQL dumps, WordPress backups, or registrar exports.
+- Migration tooling is intentionally not part of the active project workflow. Generated legacy content is now maintained as static site content.
+- Large public media belongs under `public/assets` only when it is actually referenced by a page.

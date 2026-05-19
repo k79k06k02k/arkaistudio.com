@@ -1,0 +1,17 @@
+---
+import { SITE } from "../config";
+import SocialLinks from "./SocialLinks.astro";
+---
+
+<footer class="site-footer">
+  <a class="brand footer-brand" href="/" aria-label="ARKAI Studio home">
+    <img
+      class="brand-lockup footer-brand-lockup"
+      src="/assets/brand/arkai-lockup-white.png"
+      alt={SITE.title}
+      width="2446"
+      height="760"
+    />
+  </a>
+  <SocialLinks className="footer-social" />
+</footer>

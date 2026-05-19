@@ -1,0 +1,36 @@
+---
+import { SITE } from "../config";
+
+const nav = [
+  {
+    href: "/blog/showcases/",
+    label: "Portfolio",
+    isActive: (path: string) => path.startsWith("/blog/showcases/") || path.startsWith("/portfolio/"),
+  },
+  { href: "/search/", label: "Search", isActive: (path: string) => path.startsWith("/search/") },
+];
+
+const currentPath = Astro.url.pathname;
+---
+
+<a class="skip-link" href="#content">Skip to content</a>
+<header class="site-header">
+  <a class="brand" href="/" aria-label="ARKAI Studio home">
+    <img
+      class="brand-lockup"
+      src="/assets/brand/arkai-lockup-white.png"
+      alt={SITE.title}
+      width="2446"
+      height="760"
+    />
+  </a>
+  <nav aria-label="Primary navigation">
+    {
+      nav.map((item) => (
+        <a href={item.href} aria-current={item.isActive(currentPath) ? "page" : undefined}>
+          {item.label}
+        </a>
+      ))
+    }
+  </nav>
+</header>

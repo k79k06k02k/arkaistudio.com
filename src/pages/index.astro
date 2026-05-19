@@ -1,0 +1,171 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import SocialLinks from "../components/SocialLinks.astro";
+import { FEATURED_REPOS, SITE } from "../config";
+import { stripTrailingSlash } from "../utils/content";
+
+const experience = [
+  {
+    period: "Dec 2023 - Present",
+    title: "Senior Game Engineer",
+    context: "MEandMine",
+    portfolioPaths: ["/blog/showcases/portfolio/meandmine-emotion-lab-for-kids/"],
+    summary:
+      "Built GenAI features for EdTech products using Gemini, OpenAI, and Vertex AI RAG. Ported an iOS game to WebGL, cut the initial download from ~700 MB to a 15 MB bootstrap package, and kept runtime memory under 150 MB at 30 FPS.",
+  },
+  {
+    period: "Aug 2023 - Dec 2023",
+    title: "Senior Game Engineer",
+    context: "S.G.Arts",
+    portfolioPaths: [],
+    summary:
+      "Cut resource-loading overhead by 60% through rendering and asset pipeline optimization. Built prototypes, led programming schedules, improved workflows, and delivered store, progression, task, and notification systems.",
+  },
+  {
+    period: "Jul 2022 - May 2023",
+    title: "Senior Game Engineer",
+    context: "JKOPay",
+    portfolioPaths: [],
+    summary:
+      "Owned 6 production areas: multiplayer sync, character control, camera control, pet interactions, UI/resource foundations, and packaging support. Added performance reports and handover documentation for long-term maintenance.",
+  },
+  {
+    period: "Jul 2019 - Jun 2022",
+    title: "Lead Game Engineer",
+    context: "IGG",
+    portfolioPaths: ["/blog/showcases/portfolio/myth-saga/"],
+    summary:
+      "Led a sub-10 engineer programming team for nearly 3 years. Owned scheduling, cross-discipline coordination, technical direction, mentoring, shared module architecture, automation, and code review standards.",
+  },
+  {
+    period: "Sep 2018 - Jul 2019",
+    title: "Senior Game Engineer",
+    context: "IGG",
+    portfolioPaths: ["/blog/showcases/portfolio/monster-fable/"],
+    summary:
+      "Delivered 9 production systems: core infrastructure, network tools, debug tools, data table editors, UI framework, prefab lightmap workflows, resource packaging, dynamic downloads, and AR Foundation features.",
+  },
+  {
+    period: "Sep 2016 - Jun 2018",
+    title: "Senior Game Engineer",
+    context: "Linekong Interactive Group",
+    portfolioPaths: [
+      "/blog/showcases/portfolio/supercharged/",
+      "/blog/showcases/portfolio/independence-day-extinction/",
+    ],
+    summary:
+      "Built invitation codes, PvP matchmaking, AI systems, and editor tools. Integrated 5 native service areas across Android and iOS plugins: deep links, voice, analytics, push notifications, and QR code flows.",
+  },
+];
+
+const projects = await getCollection("projects", ({ data }) => !data.draft);
+const projectByLegacyPath = new Map(
+  projects.map((project) => [stripTrailingSlash(project.data.legacyPath), project]),
+);
+
+function resolvePortfolioProjects(paths: string[]) {
+  return paths.flatMap((path) => {
+    const project = projectByLegacyPath.get(stripTrailingSlash(path));
+    const image = project?.data.featuredImage ?? project?.data.gallery[0] ?? project?.data.videos[0]?.cover;
+
+    if (!project || !image) {
+      return [];
+    }
+
+    return [
+      {
+        href: project.data.legacyPath + "/",
+        image,
+        title: project.data.title,
+      },
+    ];
+  });
+}
+
+const experienceItems = experience.map((item) => ({
+  ...item,
+  portfolioProjects: resolvePortfolioProjects(item.portfolioPaths),
+}));
+
+const featuredRepos = FEATURED_REPOS.slice(0, 3);
+---
+
+<BaseLayout title="ARKAI Studio" description={SITE.description}>
+  <section class="profile-hero">
+    <img class="profile-avatar" src="/assets/profile/avatar.jpg" alt="Arkai" width="400" height="400" loading="eager" />
+    <div class="profile-copy">
+      <h1>Hi, I’m Arkai.</h1>
+      <p class="profile-title">Senior Game Engineer | GenAI | EdTech</p>
+      <p class="lede">
+        Unity/C# game engineer focused on core systems, gameplay mechanics, editor tools, and production workflows.
+      </p>
+      <p class="lede">
+        Experienced in taking games from blank scenes to playable builds, and in turning new AI tools into practical workflows for coding, documentation, and debugging.
+      </p>
+      <div class="profile-actions" aria-label="Primary actions">
+        <a class="button primary" href="/blog/showcases/">View Portfolio</a>
+      </div>
+      <SocialLinks className="profile-links" />
+    </div>
+  </section>
+
+  <section class="experience-section" aria-labelledby="experience-title">
+    <p class="eyebrow">Experience</p>
+    <h2 id="experience-title">Game systems, GenAI products, and production tools.</h2>
+    <div class="experience-list">
+      {
+        experienceItems.map((item) => (
+          <article class="experience-item">
+            <p class="experience-meta">
+              <span>{item.period} / {item.context}</span>
+              <span class="experience-role">{item.title}</span>
+            </p>
+            <div class="experience-copy">
+              <p>{item.summary}</p>
+              {
+                item.portfolioProjects.length > 0 && (
+                  <div class="experience-projects" aria-label={`${item.context} portfolio`}>
+                    {item.portfolioProjects.map((project) => (
+                      <a
+                        class="experience-project-thumb"
+                        href={project.href}
+                        aria-label={`View ${project.title} portfolio`}
+                      >
+                        <img src={project.image} alt="" loading="lazy" />
+                        <span class="experience-project-caption">{project.title}</span>
+                      </a>
+                    ))}
+                  </div>
+                )
+              }
+            </div>
+          </article>
+        ))
+      }
+    </div>
+    <div class="experience-cta">
+      <a class="button experience-more-link" href="/blog/showcases/">View Portfolio</a>
+    </div>
+  </section>
+
+  <section class="repo-band" aria-labelledby="repo-title">
+    <div class="section-heading">
+      <p class="eyebrow">Open Source</p>
+      <h2 id="repo-title">AI workflow and Unity tools.</h2>
+      <p class="lede">Small public artifacts that show how the production workflow is wired, not just what the final screenshots look like.</p>
+    </div>
+    <div class="repo-grid">
+      {
+        featuredRepos.map((repo) => (
+          <article>
+            <p class="card-kicker">{repo.tags.join(" / ")}</p>
+            <h3><a href={repo.href}>{repo.name}</a></h3>
+            <p>{repo.description}</p>
+          </article>
+        ))
+      }
+    </div>
+  </section>
+
+</BaseLayout>

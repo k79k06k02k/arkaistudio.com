@@ -1,0 +1,53 @@
+---
+import { getCollection, render } from "astro:content";
+import BaseLayout from "../../../../../layouts/BaseLayout.astro";
+import { formatDate } from "../../../../../utils/content";
+
+export async function getStaticPaths() {
+  const posts = await getCollection("blog", ({ data }) => !data.draft);
+  return posts.map((post) => {
+    const [, root, year, month, day] = post.data.legacyPath.split("/");
+    if (root !== "blog" || !year || !month || !day || !post.data.legacySlug) {
+      throw new Error(`Invalid blog legacyPath: ${post.data.legacyPath}`);
+    }
+    return {
+      params: { year, month, day, slug: post.data.legacySlug },
+      props: { post },
+    };
+  });
+}
+
+const { post } = Astro.props;
+const { Content } = await render(post);
+---
+
+<BaseLayout
+  title={post.data.title}
+  description={post.data.description}
+  canonicalPath={post.data.legacyPath + "/"}
+  image={post.data.heroImage}
+  pagefindBody={false}
+>
+  <article class="article-shell">
+    <header class="article-header">
+      <p class="eyebrow">{post.data.categories.join(" / ")}</p>
+      <h1>{post.data.title}</h1>
+      <p class="article-meta">
+        Published <time datetime={post.data.pubDate.toISOString()}>{formatDate(post.data.pubDate)}</time>
+        {
+          post.data.modDate && (
+            <> / Updated <time datetime={post.data.modDate.toISOString()}>{formatDate(post.data.modDate)}</time></>
+          )
+        }
+      </p>
+    </header>
+    {
+      post.data.heroImage && (
+        <img class="article-hero-image" src={post.data.heroImage} alt="" loading="eager" />
+      )
+    }
+    <div class="prose">
+      <Content />
+    </div>
+  </article>
+</BaseLayout>

@@ -1,0 +1,23 @@
+---
+import type { BlogPost } from "../utils/content";
+import { formatDate } from "../utils/content";
+
+interface Props {
+  post: BlogPost;
+}
+
+const { post } = Astro.props;
+---
+
+<article class="list-card">
+  <div class="card-kicker">
+    <time datetime={post.data.pubDate.toISOString()}>{formatDate(post.data.pubDate)}</time>
+    {
+      post.data.categories.length > 0 && (
+        <span>{post.data.categories.slice(0, 2).join(" / ")}</span>
+      )
+    }
+  </div>
+  <h2><a href={post.data.legacyPath + "/"}>{post.data.title}</a></h2>
+  <p>{post.data.description}</p>
+</article>

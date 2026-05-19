@@ -1,0 +1,52 @@
+---
+import { getCollection } from "astro:content";
+import { SITE } from "../../../config";
+
+export async function getStaticPaths() {
+  const posts = await getCollection("blog", ({ data }) => !data.draft);
+  const paths = [];
+  const seen = new Set();
+
+  for (const post of posts) {
+    for (const alias of post.data.legacyAliases) {
+      const segments = alias.replace(/^\/|\/$/g, "").split("/");
+      const [, id, ...tailParts] = segments;
+      const key = `${id}/${tailParts.join("/")}`;
+      if (seen.has(key)) continue;
+      seen.add(key);
+      paths.push({
+        params: {
+          id,
+          tail: tailParts.length > 0 ? tailParts.join("/") : undefined,
+        },
+        props: {
+          target: `${post.data.legacyPath}/`,
+          title: post.data.title,
+        },
+      });
+    }
+  }
+
+  return paths;
+}
+
+const { target, title } = Astro.props;
+const canonical = new URL(target, SITE.url).href;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="refresh" content={`0; url=${target}`} />
+    <link rel="canonical" href={canonical} />
+    <title>{title} moved | {SITE.title}</title>
+  </head>
+  <body>
+    <main>
+      <h1>This article moved.</h1>
+      <p><a href={target}>Continue to {title}</a>.</p>
+    </main>
+  </body>
+</html>

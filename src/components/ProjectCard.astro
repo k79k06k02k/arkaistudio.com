@@ -1,0 +1,26 @@
+---
+import type { Project } from "../utils/content";
+
+interface Props {
+  project: Project;
+}
+
+const { project } = Astro.props;
+---
+
+<article class="project-card">
+  <a class="project-image" href={project.data.legacyPath + "/"}>
+    {
+      project.data.featuredImage ? (
+        <img src={project.data.featuredImage} alt="" loading="lazy" />
+      ) : (
+        <span>{project.data.title}</span>
+      )
+    }
+  </a>
+  <div class="project-body">
+    <p class="card-kicker">{project.data.projectTypes.join(" / ")}</p>
+    <h2><a href={project.data.legacyPath + "/"}>{project.data.title}</a></h2>
+    <p>{project.data.summary}</p>
+  </div>
+</article>

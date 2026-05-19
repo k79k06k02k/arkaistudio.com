@@ -1,0 +1,59 @@
+---
+import { SITE } from "../config";
+
+const {
+  className = "social-links",
+  ariaLabel = "Social links",
+} = Astro.props;
+
+type SocialLink = {
+  href: string;
+  label: string;
+  icon: "github" | "linkedin" | "email";
+};
+
+const socialLinks: SocialLink[] = [
+  { href: SITE.github, label: "GitHub", icon: "github" },
+  { href: SITE.linkedin, label: "LinkedIn", icon: "linkedin" },
+  { href: `mailto:${SITE.email}`, label: "Email", icon: "email" },
+];
+---
+
+<nav class={className} aria-label={ariaLabel}>
+  {
+    socialLinks.map((link) => {
+      const icon = (
+        <>
+          {
+            link.icon === "github" && (
+              <svg aria-hidden="true" viewBox="0 0 24 24">
+                <path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.21.68-.48v-1.7c-2.76.6-3.34-1.18-3.34-1.18-.45-1.15-1.1-1.45-1.1-1.45-.9-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.89 1.52 2.34 1.08 2.91.83.09-.65.35-1.08.63-1.33-2.2-.25-4.52-1.1-4.52-4.9 0-1.08.39-1.97 1.03-2.66-.1-.25-.45-1.26.1-2.63 0 0 .84-.27 2.75 1.02A9.5 9.5 0 0 1 12 7.1c.85 0 1.7.11 2.5.33 1.9-1.29 2.74-1.02 2.74-1.02.55 1.37.2 2.38.1 2.63.64.69 1.03 1.58 1.03 2.66 0 3.81-2.32 4.65-4.53 4.9.36.31.68.92.68 1.86v2.55c0 .27.18.58.69.48A10 10 0 0 0 12 2Z" />
+              </svg>
+            )
+          }
+          {
+            link.icon === "linkedin" && (
+              <svg aria-hidden="true" viewBox="0 0 24 24">
+                <path d="M6.94 8.98H3.56V20h3.38V8.98ZM7.16 5.57c0-1.08-.82-1.9-2.02-1.9-1.18 0-1.96.82-1.96 1.9 0 1.05.75 1.9 1.92 1.9h.02c1.22 0 2.04-.85 2.04-1.9ZM20.82 13.69c0-3.37-1.8-4.94-4.2-4.94-1.94 0-2.8 1.07-3.28 1.82V8.98H9.96c.04 1.03 0 11.02 0 11.02h3.38v-6.16c0-.33.02-.66.12-.9.24-.66.8-1.34 1.73-1.34 1.22 0 1.71 1.01 1.71 2.48V20h3.38l.54-6.31Z" />
+              </svg>
+            )
+          }
+          {
+            link.icon === "email" && (
+              <svg aria-hidden="true" viewBox="0 0 24 24">
+                <path d="M4 5h16c1.1 0 2 .9 2 2v10c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2Zm0 2v.28l8 5 8-5V7H4Zm16 2.64-7.47 4.67a1 1 0 0 1-1.06 0L4 9.64V17h16V9.64Z" />
+              </svg>
+            )
+          }
+          <span class="sr-only">{link.label}</span>
+        </>
+      );
+
+      return (
+        <a href={link.href} aria-label={link.label} title={link.label}>
+          {icon}
+        </a>
+      );
+    })
+  }
+</nav>

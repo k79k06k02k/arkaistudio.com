@@ -1,0 +1,195 @@
+---
+type VideoItem = {
+  id: string;
+  title?: string;
+  cover?: string;
+};
+
+type MediaItem =
+  | {
+      type: "video";
+      id: string;
+      title: string;
+      cover?: string;
+      thumb: string;
+    }
+  | {
+      type: "image";
+      src: string;
+      title: string;
+      thumb: string;
+    };
+
+interface Props {
+  title: string;
+  images?: string[];
+  videos?: VideoItem[];
+}
+
+const { title, images = [], videos = [] } = Astro.props;
+const cleanImages = [...new Set(images.filter(Boolean))];
+const firstCover = cleanImages[0];
+const videoItems: MediaItem[] = videos
+  .filter((video) => video.id)
+  .map((video, index) => {
+    const youtubeThumb = `https://img.youtube.com/vi/${video.id}/hqdefault.jpg`;
+    const cover = video.cover ?? (index === 0 ? firstCover : youtubeThumb);
+    return {
+      type: "video",
+      id: video.id,
+      title: video.title ?? `${title} video ${index + 1}`,
+      cover,
+      thumb: cover,
+    };
+  });
+const imageStart = videoItems.length > 0 && firstCover ? 1 : 0;
+const imageItems: MediaItem[] = cleanImages.slice(imageStart).map((src, index) => ({
+  type: "image",
+  src,
+  title: `${title} screenshot ${index + 1}`,
+  thumb: src,
+}));
+const firstVideo = videoItems[0];
+const firstVideoUsesFirstCover = Boolean(
+  firstCover && firstVideo?.type === "video" && firstVideo.cover === firstCover,
+);
+const orderedImageItems: MediaItem[] = firstVideoUsesFirstCover ? imageItems : cleanImages.map((src, index) => ({
+  type: "image",
+  src,
+  title: `${title} screenshot ${index + 1}`,
+  thumb: src,
+}));
+const items =
+  videoItems.length > 0 && !firstVideoUsesFirstCover && orderedImageItems.length > 0
+    ? [orderedImageItems[0], ...videoItems, ...orderedImageItems.slice(1)]
+    : [...videoItems, ...imageItems];
+---
+
+{
+  items.length > 0 && (
+    <section class="project-media-carousel" data-project-gallery aria-label={`${title} media gallery`}>
+      <div class="project-media-stage">
+        {items.map((item, index) => (
+          <div
+            class:list={[
+              "project-media-slide",
+              item.type === "video" && "project-media-slide-video",
+            ]}
+            data-project-slide
+            data-index={index}
+            data-video-id={item.type === "video" ? item.id : undefined}
+            data-video-title={item.type === "video" ? item.title : undefined}
+            data-active={index === 0 ? "true" : "false"}
+          >
+            {item.type === "video" ? (
+              <div class="project-video-frame">
+                <button class="project-video-launcher" type="button" data-video-launcher aria-label={`Play ${item.title}`}>
+                  {item.cover ? <img src={item.cover} alt="" loading={index === 0 ? "eager" : "lazy"} /> : null}
+                  <span class="project-video-play" aria-hidden="true">
+                    <svg viewBox="0 0 48 48" focusable="false">
+                      <circle cx="24" cy="24" r="23" />
+                      <path d="M20 15.8v16.4L33.2 24 20 15.8z" />
+                    </svg>
+                  </span>
+                </button>
+              </div>
+            ) : (
+              <img src={item.src} alt="" loading={index === 0 ? "eager" : "lazy"} />
+            )}
+          </div>
+        ))}
+        {items.length > 1 && (
+          <>
+            <button class="project-media-nav project-media-prev" type="button" data-gallery-prev aria-label="Previous media">
+              <svg viewBox="0 0 24 24" focusable="false">
+                <path d="M15.4 4.6 8 12l7.4 7.4" />
+              </svg>
+            </button>
+            <button class="project-media-nav project-media-next" type="button" data-gallery-next aria-label="Next media">
+              <svg viewBox="0 0 24 24" focusable="false">
+                <path d="m8.6 4.6 7.4 7.4-7.4 7.4" />
+              </svg>
+            </button>
+          </>
+        )}
+      </div>
+      {items.length > 1 && (
+        <div class="project-media-thumbs" role="tablist" aria-label={`${title} thumbnails`}>
+          {items.map((item, index) => (
+            <button
+              class:list={["project-media-thumb", item.type === "video" && "project-media-thumb-video"]}
+              type="button"
+              data-gallery-thumb
+              data-index={index}
+              aria-label={`Show media ${index + 1}`}
+              aria-selected={index === 0 ? "true" : "false"}
+            >
+              <img src={item.thumb} alt="" loading="lazy" />
+            </button>
+          ))}
+        </div>
+      )}
+    </section>
+  )
+}
+
+<script>
+  for (const gallery of document.querySelectorAll("[data-project-gallery]")) {
+    const slides = [...gallery.querySelectorAll("[data-project-slide]")];
+    const thumbs = [...gallery.querySelectorAll("[data-gallery-thumb]")];
+    const prev = gallery.querySelector("[data-gallery-prev]");
+    const next = gallery.querySelector("[data-gallery-next]");
+    let active = 0;
+
+    const stopInactiveVideos = () => {
+      for (const slide of slides) {
+        if (slide.getAttribute("data-active") === "true") continue;
+        const iframe = slide.querySelector("iframe");
+        const launcher = slide.querySelector("[data-video-launcher]");
+        if (iframe) iframe.remove();
+        if (launcher instanceof HTMLElement) launcher.hidden = false;
+      }
+    };
+
+    const show = (index: number) => {
+      active = (index + slides.length) % slides.length;
+      slides.forEach((slide, slideIndex) => {
+        slide.setAttribute("data-active", slideIndex === active ? "true" : "false");
+      });
+      thumbs.forEach((thumb, thumbIndex) => {
+        thumb.setAttribute("aria-selected", thumbIndex === active ? "true" : "false");
+      });
+      stopInactiveVideos();
+    };
+
+    prev?.addEventListener("click", () => show(active - 1));
+    next?.addEventListener("click", () => show(active + 1));
+    thumbs.forEach((thumb, index) => {
+      thumb.addEventListener("click", () => show(index));
+    });
+
+    gallery.querySelectorAll("[data-video-launcher]").forEach((button) => {
+      if (!(button instanceof HTMLButtonElement)) return;
+
+      button.addEventListener("click", () => {
+        const slide = button.closest("[data-project-slide]");
+        if (!(slide instanceof HTMLElement)) return;
+        const videoId = slide.dataset.videoId;
+        if (!videoId) return;
+
+        const title = slide.dataset.videoTitle ?? "Embedded YouTube video";
+        const iframe = document.createElement("iframe");
+        iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0`;
+        iframe.title = title;
+        iframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
+        iframe.allowFullscreen = true;
+        iframe.loading = "lazy";
+
+        const frame = slide.querySelector(".project-video-frame");
+        if (!frame) return;
+        button.hidden = true;
+        frame.append(iframe);
+      });
+    });
+  }
+</script>

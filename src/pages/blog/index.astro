@@ -1,0 +1,29 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import PostCard from "../../components/PostCard.astro";
+import { byNewest, uniqueSorted } from "../../utils/content";
+
+const posts = (await getCollection("blog", ({ data }) => !data.draft)).sort(byNewest);
+const categories = uniqueSorted(posts.flatMap((post) => post.data.categories));
+---
+
+<BaseLayout
+  title="Blog"
+  description="ARKAI Studio technical articles, Unity notes, and production writeups."
+  pagefindBody={false}
+>
+  <section class="page-hero">
+    <p class="eyebrow">Blog archive</p>
+    <h1>Unity systems, tools, shaders, conference notes, and production lessons.</h1>
+    <p class="lede">
+      The old WordPress archive now lives as static content under its original URL structure.
+      The articles have been translated and cleaned up for an English-first site.
+    </p>
+    <div class="tag-row">{categories.map((category) => <span>{category}</span>)}</div>
+  </section>
+
+  <section class="stack archive-list">
+    {posts.map((post) => <PostCard post={post} />)}
+  </section>
+</BaseLayout>

@@ -1,54 +1,82 @@
 # ARKAI Studio
 
-Personal portfolio site for ARKAI Studio, built with Astro and deployed to GitHub Pages.
+This is the source code for my personal portfolio site, built with
+[Astro](https://astro.build) and deployed to
+[GitHub Pages](https://pages.github.com).
 
-## Scope
+Live site: [www.arkaistudio.com](https://www.arkaistudio.com)
 
-- English-first portfolio and professional profile.
-- Portfolio index at `/portfolio/`.
-- Static project pages under `/blog/showcases/portfolio/.../` for legacy URL compatibility.
-- Legacy blog pages are kept as static archives so old links continue to work, but they are not the main product surface.
-- Pagefind static search, RSS, sitemap, OpenGraph metadata, and local media assets.
+## About
 
-## Stack
+I'm Arkai, a senior game engineer focused on Unity/C#, WebGL production
+systems, GenAI workflows, and EdTech game products. This site hosts my
+portfolio, selected production history, public engineering artifacts, and
+static legacy archives.
 
-- Astro
-- TypeScript
-- MDX/content collections
-- Pagefind
-- GitHub Actions
-- GitHub Pages
+## Project Structure
+
+```text
+├── public/                    # Static assets, icons, brand files, and local media
+│   ├── assets/brand/          # ARKAI Studio logo and lockups
+│   └── assets/migrated/       # Referenced legacy media kept for static pages
+├── src/
+│   ├── components/            # Reusable Astro components
+│   ├── content/
+│   │   ├── blog/              # Legacy technical articles kept for URL compatibility
+│   │   └── projects/          # Portfolio entries
+│   ├── layouts/               # Shared page layouts
+│   ├── pages/                 # Astro routes
+│   ├── styles/                # Global CSS
+│   └── utils/                 # Content helpers
+├── .github/workflows/         # GitHub Pages deployment workflow
+├── astro.config.mjs           # Astro configuration
+├── package.json               # Project scripts and dependencies
+├── pnpm-lock.yaml             # Locked dependency graph
+└── public/CNAME               # GitHub Pages custom domain
+```
 
 ## Commands
 
-```bash
-pnpm install
-pnpm run dev
-pnpm run check
-pnpm run build
-pnpm run preview
-```
+| Command            | Action                                           |
+| :----------------- | :----------------------------------------------- |
+| `pnpm install`     | Install dependencies                             |
+| `pnpm run dev`     | Start the local dev server at `localhost:4321`   |
+| `pnpm run check`   | Run Astro type and content checks                |
+| `pnpm run build`   | Build the production site and Pagefind index     |
+| `pnpm run preview` | Preview the production build locally             |
 
 ## Deployment
 
-The site deploys from `main` through `.github/workflows/deploy.yml`.
+The site deploys from `main` through GitHub Actions. The workflow builds the
+static site, generates the Pagefind index, uploads `dist/`, and publishes it to
+GitHub Pages.
 
-The GitHub Pages custom domain is configured by:
-
-```txt
-public/CNAME
-```
-
-Current canonical domain:
+The canonical domain is:
 
 ```txt
 www.arkaistudio.com
 ```
 
-DNS is managed outside this repository. Keep mail records and domain settings in the registrar/DNS provider; do not commit provider exports or credentials here.
+DNS is managed outside this repository. Keep registrar exports, DNS provider
+credentials, mail settings, and API tokens out of git.
 
-## Repository Hygiene
+## Content Notes
 
-- Do not commit `.env` files, private keys, API tokens, SQL dumps, WordPress backups, or registrar exports.
-- Migration tooling is intentionally not part of the active project workflow. Generated legacy content is now maintained as static site content.
-- Large public media belongs under `public/assets` only when it is actually referenced by a page.
+- `/portfolio/` is the public portfolio index.
+- Project detail pages keep their legacy `/blog/showcases/portfolio/.../`
+  paths so older links continue to work.
+- Legacy blog pages remain static archives. They are not the primary product
+  surface of the site.
+- Migration tooling is intentionally not part of the active project workflow.
+
+## License
+
+No open source license is declared for this repository yet. Unless stated
+otherwise, the website content, images, portfolio media, and ARKAI Studio brand
+assets are owned by ARKAI Studio.
+
+## Inspiration
+
+The README structure is intentionally close to
+[Peter Steinberger's personal site](https://github.com/steipete/steipete.me):
+short overview, project structure, commands, deployment, and clear ownership.

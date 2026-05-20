@@ -5,8 +5,9 @@
   "type": "module",
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build && pagefind --site dist && node scripts/verify-media-variants.mjs",
+    "build": "astro build && pagefind --site dist && node scripts/verify-media-variants.mjs && node scripts/verify-cloudflare-analytics.mjs",
     "preview": "astro preview",
+    "analytics:verify": "node scripts/verify-cloudflare-analytics.mjs",
     "media:verify": "node scripts/verify-media-variants.mjs",
     "astro": "astro",
     "check": "astro check"

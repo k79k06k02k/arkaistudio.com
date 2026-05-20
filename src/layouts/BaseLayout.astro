@@ -1,7 +1,7 @@
 ---
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
-import { SITE } from "../config";
+import { ANALYTICS, SITE } from "../config";
 import "../styles/global.css";
 
 interface Props {
@@ -26,6 +26,13 @@ const pageTitle = title === SITE.title ? SITE.title : `${title} | ${SITE.title}`
 const canonical = new URL(canonicalPath, SITE.url);
 const ogImage = new URL(image, SITE.url);
 const usesDefaultOgImage = image === defaultOgImage;
+const cloudflareAnalyticsToken = import.meta.env.PROD
+  ? import.meta.env.PUBLIC_CLOUDFLARE_WEB_ANALYTICS_TOKEN ||
+    ANALYTICS.cloudflareWebAnalyticsToken
+  : undefined;
+const cloudflareAnalyticsConfig = cloudflareAnalyticsToken
+  ? JSON.stringify({ token: cloudflareAnalyticsToken })
+  : undefined;
 ---
 
 <!doctype html>
@@ -62,5 +69,15 @@ const usesDefaultOgImage = image === defaultOgImage;
       <slot />
     </main>
     <Footer />
+    {
+      cloudflareAnalyticsConfig && (
+        <script
+          is:inline
+          defer
+          src="https://static.cloudflareinsights.com/beacon.min.js"
+          data-cf-beacon={cloudflareAnalyticsConfig}
+        />
+      )
+    }
   </body>
 </html>

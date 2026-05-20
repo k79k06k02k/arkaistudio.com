@@ -10,6 +10,11 @@ export const SITE = {
   email: "k79k06k02k@gmail.com",
 };
 
+export const ANALYTICS = {
+  // Public site token; Cloudflare expects this to ship in the built HTML.
+  cloudflareWebAnalyticsToken: "8b2333320ca04d99ba4a25c85868bbc2",
+};
+
 export const FEATURED_REPOS = [
   {
     name: "llm-project-wiki",

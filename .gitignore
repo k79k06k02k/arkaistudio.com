@@ -3,4 +3,7 @@ dist/
 .astro/
 .playwright-mcp/
 .DS_Store
+.env
+.env.*
+!.env.example
 src/content/.migration-cache/

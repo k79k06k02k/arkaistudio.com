@@ -19,7 +19,7 @@ categories:
 tags:
   []
 sourceUrl: "https://www.arkaistudio.com/blog/2016/07/13/unity-ugui-%e5%af%a6%e4%bd%9c%e7%af%87-%e4%b8%80%ef%bc%9a%e4%bb%8b%e9%9d%a2%e7%b3%bb%e7%b5%b1-ui-manager-%e5%8b%95%e6%85%8b%e9%96%8b%e5%95%9f%e3%80%81%e9%97%9c%e9%96%89%e3%80%81%e9%a1%af%e7%a4%ba/"
-heroImage: "/assets/migrated/blog/unity-ugui--cf24b84529.png"
+heroImage: "/assets/media/migrated/blog/unity-ugui--cf24b84529-w750.webp"
 draft: false
 ---
 

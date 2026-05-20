@@ -9,7 +9,7 @@ projectTypes:
   - "MOBILE"
   - "WORK"
 sourceUrl: "https://www.arkaistudio.com/blog/showcases/portfolio/play8-sign-in-sdk/"
-featuredImage: "/assets/migrated/projects/play8_sign_in_01-96a0d59afb.png"
+featuredImage: "/assets/media/migrated/projects/play8_sign_in_01-96a0d59afb-w1200.webp"
 gallery:
   []
 videos:

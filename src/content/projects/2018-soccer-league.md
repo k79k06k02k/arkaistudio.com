@@ -9,7 +9,7 @@ projectTypes:
   - "INDIE"
   - "MOBILE"
 sourceUrl: "https://www.arkaistudio.com/blog/showcases/portfolio/%e2%9a%bd-soccer-league/"
-featuredImage: "/assets/migrated/projects/soccer_league_3-9b138b9634.jpg"
+featuredImage: "/assets/media/migrated/projects/soccer_league_3-9b138b9634-w1078.webp"
 gallery:
   []
 videos:
@@ -30,4 +30,4 @@ draft: false
 -   Integrated Google Play Services login and save data.
 -   Built packaging tools.
 
-[![](/assets/migrated/projects/google-play-badge-300x116-f1e396fa88.png)](https://play.google.com/store/apps/details?id=com.partyavenger.rocknleague)
+[![](/assets/media/migrated/projects/google-play-badge-300x116-f1e396fa88-w300.webp)](https://play.google.com/store/apps/details?id=com.partyavenger.rocknleague)

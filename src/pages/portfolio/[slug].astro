@@ -2,6 +2,7 @@
 import { getCollection, render } from "astro:content";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import ProjectMediaCarousel from "../../components/ProjectMediaCarousel.astro";
+import ResponsiveImage from "../../components/ResponsiveImage.astro";
 import { formatDate, projectPath } from "../../utils/content";
 
 export async function getStaticPaths() {
@@ -39,7 +40,14 @@ const hasRichMedia = project.data.gallery.length > 0 || project.data.videos.leng
         <ProjectMediaCarousel title={project.data.title} images={mediaImages} videos={project.data.videos} />
       ) : (
         project.data.featuredImage && (
-          <img class="article-hero-image" src={project.data.featuredImage} alt="" loading="eager" />
+          <ResponsiveImage
+            class="article-hero-image"
+            src={project.data.featuredImage}
+            alt=""
+            loading="eager"
+            sizes="(min-width: 860px) 760px, calc(100vw - 40px)"
+            fetchpriority="high"
+          />
         )
       )
     }

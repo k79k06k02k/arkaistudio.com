@@ -1,0 +1,61 @@
+---
+import {
+  getMediaAsset,
+  getMediaDisplaySrc,
+  getMediaSrcSet,
+  isAnimatedMediaAsset,
+} from "../utils/media";
+
+interface Props {
+  src: string;
+  alt?: string;
+  class?: string;
+  loading?: "eager" | "lazy";
+  sizes?: string;
+  decoding?: "async" | "auto" | "sync";
+  fetchpriority?: "auto" | "high" | "low";
+  width?: number;
+  height?: number;
+}
+
+const {
+  src,
+  alt = "",
+  class: className,
+  loading = "lazy",
+  sizes = "100vw",
+  decoding = "async",
+  fetchpriority,
+  width,
+  height,
+} = Astro.props;
+
+const asset = getMediaAsset(src);
+const displaySrc = getMediaDisplaySrc(src);
+const avifSrcSet = getMediaSrcSet(src, "avif");
+const webpSrcSet = getMediaSrcSet(src, "webp");
+const imageWidth = width ?? asset?.width;
+const imageHeight = height ?? asset?.height;
+const imageAttrs = {
+  src: displaySrc,
+  alt,
+  class: className,
+  loading,
+  decoding,
+  fetchpriority,
+  width: imageWidth,
+  height: imageHeight,
+};
+---
+
+{
+  asset && !isAnimatedMediaAsset(asset) ? (
+    <picture class="responsive-picture">
+      {avifSrcSet && <source type="image/avif" srcset={avifSrcSet} sizes={sizes} />}
+      {webpSrcSet && <source type="image/webp" srcset={webpSrcSet} sizes={sizes} />}
+      <img {...imageAttrs} />
+    </picture>
+  ) : (
+    <img {...imageAttrs} />
+  )
+}

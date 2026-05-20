@@ -19,7 +19,7 @@ categories:
 tags:
   []
 sourceUrl: "https://www.arkaistudio.com/blog/2016/04/26/%e5%b1%ac%e6%96%bc%e5%b7%a5%e7%a8%8b%e5%b8%ab%e7%9a%84%e5%b0%88%e7%94%a8%e5%b7%a5%e5%85%b7%e7%ae%b1%e4%b8%89%ef%bc%9a%e7%b7%a8%e8%bc%af%e5%b7%a5%e5%85%b7editor-tools/"
-heroImage: "/assets/migrated/blog/special-2-8a969f23c2.png"
+heroImage: "/assets/media/migrated/blog/special-2-8a969f23c2-w750.webp"
 draft: false
 ---
 
@@ -52,7 +52,7 @@ draft: false
 
 ### Source code
 
-##  [![](/assets/migrated/blog/icon_github-02a86a0d50.png)](https://github.com/k79k06k02k/KKTools)
+##  [![](/assets/media/migrated/blog/icon_github-02a86a0d50-w212.webp)](https://github.com/k79k06k02k/KKTools)
 
 
 
@@ -62,40 +62,40 @@ draft: false
 
 Usage: Select any AssetBundle file for analysis.
 
-![AssetBundleAnalyzer\_01](/assets/migrated/blog/assetbundleanalyzer_01-655ad72a36.png)
+![AssetBundleAnalyzer\_01](/assets/media/migrated/blog/assetbundleanalyzer_01-655ad72a36-w712.webp)
 
 #### AssetBundle Watch
 
-**![notice](/assets/migrated/blog/notice-76af5ba665.png) Note: Only applies to Unity 5's newer AssetBundle system.**
+**![notice](/assets/media/migrated/blog/notice-76af5ba665-w48.webp) Note: Only applies to Unity 5's newer AssetBundle system.**
 
 Usage: Display either the selected bundle or all bundles. Files are grouped by AssetBundle Name, so you can quickly see which assets belong to which bundle.
 
-![AssetBundleWatch\_01](/assets/migrated/blog/assetbundlewatch_01-fc67ce6bdd.png)
-![AssetBundleWatch\_02](/assets/migrated/blog/assetbundlewatch_02-79855f0dc7.png)
+![AssetBundleWatch\_01](/assets/media/migrated/blog/assetbundlewatch_01-fc67ce6bdd-w776.webp)
+![AssetBundleWatch\_02](/assets/media/migrated/blog/assetbundlewatch_02-79855f0dc7-w776.webp)
 
 #### AssetBundle Build (AssetBundle Build)
 
-**![notice](/assets/migrated/blog/notice-76af5ba665.png) Note: Only applies to Unity 5's newer AssetBundle system.**
+**![notice](/assets/media/migrated/blog/notice-76af5ba665-w48.webp) Note: Only applies to Unity 5's newer AssetBundle system.**
 
 Usage: Select the target platform, then build the AssetBundle.
 
-![AssetBundleBuild\_01](/assets/migrated/blog/assetbundlebuild_01-edb00065b8.png)
+![AssetBundleBuild\_01](/assets/media/migrated/blog/assetbundlebuild_01-edb00065b8-w614.webp)
 
 #### AssetBundle Build All Platform (AssetBundle Build All Platform)
 
-**![notice](/assets/migrated/blog/notice-76af5ba665.png) Note: Only applies to Unity 5's newer AssetBundle system.**
+**![notice](/assets/media/migrated/blog/notice-76af5ba665-w48.webp) Note: Only applies to Unity 5's newer AssetBundle system.**
 
 Usage: Build AssetBundles for every configured platform. The platform list can be adjusted in code.
 
-![AssetBundleBuildAllPlatform\_01](/assets/migrated/blog/assetbundlebuildallplatform_01-d612898f1f.png)
+![AssetBundleBuildAllPlatform\_01](/assets/media/migrated/blog/assetbundlebuildallplatform_01-d612898f1f-w432.webp)
 
 #### Print out all current AssetBundle Names (AssetBundle Show All Name)
 
-**![notice](/assets/migrated/blog/notice-76af5ba665.png) Note: Only applies to Unity 5's newer AssetBundle system.**
+**![notice](/assets/media/migrated/blog/notice-76af5ba665-w48.webp) Note: Only applies to Unity 5's newer AssetBundle system.**
 
 Usage: Print all current AssetBundle Names to the Console.
 
-![AssetBundleShowAllName\_01](/assets/migrated/blog/assetbundleshowallname_01-c7fed429a8.png)
+![AssetBundleShowAllName\_01](/assets/media/migrated/blog/assetbundleshowallname_01-c7fed429a8-w432.webp)
 
 ### Create files related
 
@@ -103,7 +103,7 @@ Usage: Print all current AssetBundle Names to the Console.
 
 Usage: Select the folder set you want to create.
 
-![MakeFolders\_01](/assets/migrated/blog/makefolders_01-fc6db957cb.png)
+![MakeFolders\_01](/assets/media/migrated/blog/makefolders_01-fc6db957cb-w414.webp)
 
 ### Search related
 
@@ -111,7 +111,7 @@ Usage: Select the folder set you want to create.
 
 Usage: Enter a search string, then choose whether to search Scene objects or Prefabs. Filters narrow the target type.
 
-![GameObjectFinder\_01](/assets/migrated/blog/gameobjectfinder_01-d44950bdee.png)
+![GameObjectFinder\_01](/assets/media/migrated/blog/gameobjectfinder_01-d44950bdee-w814.webp)
 
 ### Prefab related
 
@@ -119,9 +119,9 @@ Usage: Enter a search string, then choose whether to search Scene objects or Pre
 
 Usage: Supports two workflows: `Create` and `Apply`. This makes it easier to operate on several Prefabs, which older Unity versions did not handle well by default.
 
-![PrefabTool\_01](/assets/migrated/blog/prefabtool_01-01429e4d26.png)
-![PrefabTool\_02](/assets/migrated/blog/prefabtool_02-8ad53b6a60.png)
-![PrefabTool\_03](/assets/migrated/blog/prefabtool_03-56a621ac78.png)
+![PrefabTool\_01](/assets/media/migrated/blog/prefabtool_01-01429e4d26-w609.webp)
+![PrefabTool\_02](/assets/media/migrated/blog/prefabtool_02-8ad53b6a60-w609.webp)
+![PrefabTool\_03](/assets/media/migrated/blog/prefabtool_03-56a621ac78-w609.webp)
 
 ### UGUI related
 
@@ -136,7 +136,7 @@ Supported operations:
 -   Mirror Vertically Around Anchors
 -   Flip anchors and images vertically around the parent's center point (Mirror Vertically Around Parent Center)
 
-![UGUITool\_01](/assets/migrated/blog/uguitool_01-61803806e9.png)
+![UGUITool\_01](/assets/media/migrated/blog/uguitool_01-61803806e9-w414.webp)
 
 ### Window related
 
@@ -144,21 +144,21 @@ Supported operations:
 
 Usage: Add scenes under `Unity -> File -> Build Settings`, then click a scene name in the tool to switch scenes.
 
-![SceneWatcher\_01](/assets/migrated/blog/scenewatcher_01-04e0e6c238.png)
+![SceneWatcher\_01](/assets/media/migrated/blog/scenewatcher_01-04e0e6c238-w348.webp)
 
 ### Show related
 
 #### Display object icon in Hierarchy
 
-![ShowIconInHierarchy\_02](/assets/migrated/blog/showiconinhierarchy_02-0c4131556f.png)
+![ShowIconInHierarchy\_02](/assets/media/migrated/blog/showiconinhierarchy_02-0c4131556f-w328.webp)
 
 #### Show and edit Canvas and Sprite sorting order in Hierarchy
 
-![ShowSortingOrder\_02](/assets/migrated/blog/showsortingorder_02-c78205ed29.png)
+![ShowSortingOrder\_02](/assets/media/migrated/blog/showsortingorder_02-c78205ed29-w234.webp)
 
 #### Show Position, Rotation, and Scale reset buttons under Transform in Inspector
 
-![TransformInspectorResetEditor\_02](/assets/migrated/blog/transforminspectorreseteditor_02-22f8f30b3d.png)
+![TransformInspectorResetEditor\_02](/assets/media/migrated/blog/transforminspectorreseteditor_02-22f8f30b3d-w280.webp)
 
 ### Postscript
 

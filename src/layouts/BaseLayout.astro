@@ -12,7 +12,7 @@ interface Props {
   pagefindBody?: boolean;
 }
 
-const defaultOgImage = "/assets/og/arkai-studio-og.png";
+const defaultOgImage = "/assets/og/arkai-studio-og.webp";
 
 const {
   title = SITE.title,
@@ -36,9 +36,11 @@ const usesDefaultOgImage = image === defaultOgImage;
     <title>{pageTitle}</title>
     <meta name="description" content={description} />
     <link rel="canonical" href={canonical} />
-    <link rel="icon" href="/favicon-32x32.png" type="image/png" sizes="32x32" />
-    <link rel="icon" href="/favicon-16x16.png" type="image/png" sizes="16x16" />
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
+    <link rel="icon" href="/favicon-32x32.avif" type="image/avif" sizes="32x32" />
+    <link rel="icon" href="/favicon-16x16.avif" type="image/avif" sizes="16x16" />
+    <link rel="icon" href="/favicon-32x32.webp" type="image/webp" sizes="32x32" />
+    <link rel="icon" href="/favicon-16x16.webp" type="image/webp" sizes="16x16" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.webp" sizes="180x180" />
     <link rel="manifest" href="/site.webmanifest" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content={SITE.title} />
@@ -46,7 +48,7 @@ const usesDefaultOgImage = image === defaultOgImage;
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonical} />
     <meta property="og:image" content={ogImage} />
-    {usesDefaultOgImage && <meta property="og:image:type" content="image/png" />}
+    {usesDefaultOgImage && <meta property="og:image:type" content="image/webp" />}
     {usesDefaultOgImage && <meta property="og:image:width" content="1200" />}
     {usesDefaultOgImage && <meta property="og:image:height" content="630" />}
     <meta name="twitter:card" content="summary_large_image" />

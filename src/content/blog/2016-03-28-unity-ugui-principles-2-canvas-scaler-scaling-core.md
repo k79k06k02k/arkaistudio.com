@@ -19,7 +19,7 @@ categories:
 tags:
   []
 sourceUrl: "https://www.arkaistudio.com/blog/2016/03/28/unity-ugui-%e5%8e%9f%e7%90%86%e7%af%87%e4%ba%8c%ef%bc%9acanvas-scaler-%e7%b8%ae%e6%94%be%e6%a0%b8%e5%bf%83/"
-heroImage: "/assets/migrated/blog/special-1-a9491c6460.png"
+heroImage: "/assets/media/migrated/blog/special-1-a9491c6460-w750.webp"
 draft: false
 ---
 
@@ -61,9 +61,9 @@ Canvas Scaler controls the overall size and pixel density of UI elements under a
 -   Screen Size: the current device or game window resolution.
 -   Canvas Size: the width and height of the Canvas RectTransform.
 
-![size-1](/assets/migrated/blog/size-1-300x205-9fa6302636.png)
+![size-1](/assets/media/migrated/blog/size-1-300x205-9fa6302636-w300.webp)
 
-![size-2](/assets/migrated/blog/size-2-300x194-c94baa0e8f.png)
+![size-2](/assets/media/migrated/blog/size-2-300x194-c94baa0e8f-w300.webp)
 
 ### Scale Factor
 
@@ -86,13 +86,13 @@ The code shows that Canvas Scaler changes the Canvas Scale Factor and scales eve
 
 When Scale Factor is `1`, a Screen Size of `800 * 600` produces a Canvas Size of `800 * 600`.
 
-![Scale Factor-1](/assets/migrated/blog/scale-factor-1-300x194-acfc33d204.png)
-![Scale Factor-1-1](/assets/migrated/blog/scale-factor-1-1-300x225-da1cd3af68.png)
+![Scale Factor-1](/assets/media/migrated/blog/scale-factor-1-300x194-acfc33d204-w300.webp)
+![Scale Factor-1-1](/assets/media/migrated/blog/scale-factor-1-1-300x225-da1cd3af68-w300.webp)
 
 When Scale Factor is `2`, the same `800 * 600` screen produces a Canvas Size of `400 * 300`. The Canvas is then scaled by 2, so the visual result maps back to the screen size.
 
-![Scale Factor-2](/assets/migrated/blog/scale-factor-2-300x190-f09f806616.png)
-![Scale Factor-2-1](/assets/migrated/blog/scale-factor-2-1-300x224-551c2868f5.png)
+![Scale Factor-2](/assets/media/migrated/blog/scale-factor-2-300x190-f09f806616-w300.webp)
+![Scale Factor-2-1](/assets/media/migrated/blog/scale-factor-2-1-300x224-551c2868f5-w300.webp)
 
 ### UI Scale Mode
 
@@ -100,28 +100,28 @@ When Scale Factor is `2`, the same `800 * 600` screen produces a Canvas Size of 
 
 Canvas Size always matches Screen Size. UI elements are scaled directly through Scale Factor.
 
-#### ![](/assets/migrated/blog/constant-pixel-size-1-50fe88bac2.png)
+#### ![](/assets/media/migrated/blog/constant-pixel-size-1-50fe88bac2-w446.webp)
 
 1.  Scale Factor: scales every element under this Canvas.
 2.  Reference Pixels Per Unit: maps Sprite pixels to UI units.
 
-#####  ![Pixels Pre Unit-1](/assets/migrated/blog/pixels-pre-unit-1-4b14cd28a3.png)
+#####  ![Pixels Pre Unit-1](/assets/media/migrated/blog/pixels-pre-unit-1-4b14cd28a3-w558.webp)
 
 The test image here is a `100 * 100` image.
 
-#####  ![Test Image](/assets/migrated/blog/test-image-d72df588bc.png)
+#####  ![Test Image](/assets/media/migrated/blog/test-image-d72df588bc-w100.webp)
 
 Suppose the scene contains a `1 * 1` Cube and a Sprite using the test image. Both have Transform Scale set to `1`.
 
 When Pixels Per Unit is `100`, each Unity unit contains 100 pixels. The Sprite is `100 * 100` pixels, so its world size becomes `100 / 100 * 100 / 100 = 1 * 1` unit.
 
-![Pixels Per Unit set to 100](/assets/migrated/blog/pixels-pre-unit-2-300x238-caf277af86.png)
+![Pixels Per Unit set to 100](/assets/media/migrated/blog/pixels-pre-unit-2-300x238-caf277af86-w300.webp)
 
 Left: Cube. Right: Sprite.
 
 When Pixels Per Unit is `10`, each Unity unit contains 10 pixels. The same Sprite becomes `100 / 10 * 100 / 10 = 10 * 10` units.
 
-![Pixels Per Unit set to 10](/assets/migrated/blog/pixels-pre-unit-3-300x256-e9b3549c07.png)
+![Pixels Per Unit set to 10](/assets/media/migrated/blog/pixels-pre-unit-3-300x256-e9b3549c07-w300.webp)
 
 Left: Cube. Right: Sprite.
 
@@ -174,11 +174,11 @@ public override void SetNativeSize()
 
 When setting the native size of an Image, Unity divides the Sprite width and height by `pixelsPerUnit`.
 
-##### ![Reference Pixels Per Unit-1](/assets/migrated/blog/reference-pixels-per-unit-1-dbdee69035.png)
+##### ![Reference Pixels Per Unit-1](/assets/media/migrated/blog/reference-pixels-per-unit-1-dbdee69035-w561.webp)
 
 Create an Image under the Canvas, assign the test Sprite, and use the following settings.
 
-##### ![Reference Pixels Per Unit-2](/assets/migrated/blog/reference-pixels-per-unit-2-5336c9e178.png)
+##### ![Reference Pixels Per Unit-2](/assets/media/migrated/blog/reference-pixels-per-unit-2-5336c9e178-w562.webp)
 
 Here are four tests. Change Reference Pixels Per Unit and Pixels Per Unit, then click `Set Native Size` on the Image component.
 
@@ -200,7 +200,7 @@ Here are four tests. Change Reference Pixels Per Unit and Pixels Per Unit, then 
 
 This mode scales UI based on the Reference Resolution.
 
-![](/assets/migrated/blog/scale-with-screen-size-1-1b88bc0c36.png)
+![](/assets/media/migrated/blog/scale-with-screen-size-1-1b88bc0c36-w446.webp)
 
 -   Reference Resolution: the default design resolution.
 -   Screen Match Mode: the scaling strategy.
@@ -262,7 +262,7 @@ For example, Reference Resolution is `1280 * 720` and Screen Size is `800 * 600`
 
 Canvas Size becomes `1280 * 960`. The height expands from `720` to `960`, which keeps all elements visible.
 
-![](/assets/migrated/blog/expand-e65e8827ba.png)
+![](/assets/media/migrated/blog/expand-e65e8827ba-w1011.webp)
 
 #### Shrink
 
@@ -283,7 +283,7 @@ Using the same example, Unity chooses the larger ratio.
 
 Canvas Size becomes `960 * 720`. The width shrinks from `1280` to `960`.
 
-![](/assets/migrated/blog/shrink-1-b227652bf5.png)
+![](/assets/media/migrated/blog/shrink-1-b227652bf5-w754.webp)
 
 #### Match Width or Height
 
@@ -300,7 +300,7 @@ Unity takes the logarithm of the width and height scale factors before blending 
 
 Suppose Reference Resolution is `400 * 300` and Screen Size is `200 * 600`. Width is half of the reference, while height is double.
 
-![](/assets/migrated/blog/match-width-or-height-1-eeca7778c8.png)
+![](/assets/media/migrated/blog/match-width-or-height-1-eeca7778c8-w805.webp)
 
 When Match is `0.5`, the expected ScaleFactor is `1`.
 
@@ -331,7 +331,7 @@ The linear blend gives `1.25`; the logarithmic blend gives `1`. The logarithmic 
 
 This mode scales UI through the hardware device DPI.
 
-![](/assets/migrated/blog/constant-physical-size-1-9b68ad8504.png)
+![](/assets/media/migrated/blog/constant-physical-size-1-9b68ad8504-w446.webp)
 
 1.  Physical Unit: the unit type used for scaling.
 2.  Fallback Screen DPI: backup DPI used when the device DPI cannot be detected.

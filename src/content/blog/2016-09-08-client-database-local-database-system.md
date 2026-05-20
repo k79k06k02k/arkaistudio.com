@@ -19,7 +19,7 @@ categories:
 tags:
   []
 sourceUrl: "https://www.arkaistudio.com/blog/2016/09/08/client-database-%e6%9c%ac%e5%9c%b0%e8%b3%87%e6%96%99%e5%ba%ab%e7%b3%bb%e7%b5%b1/"
-heroImage: "/assets/migrated/blog/client-database--c9215c0205.png"
+heroImage: "/assets/media/migrated/blog/client-database--c9215c0205-w750.webp"
 draft: false
 ---
 
@@ -41,7 +41,7 @@ draft: false
 
 ### Source code
 
-[![icon\_GitHub](/assets/migrated/blog/icon_github-02a86a0d50.png)](https://github.com/k79k06k02k/ClientDataBase)
+[![icon\_GitHub](/assets/media/migrated/blog/icon_github-02a86a0d50-w212.webp)](https://github.com/k79k06k02k/ClientDataBase)
 
 ## Attribution
 

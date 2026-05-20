@@ -19,7 +19,7 @@ categories:
 tags:
   []
 sourceUrl: "https://www.arkaistudio.com/blog/2016/10/04/%e4%b8%80%e8%b5%b7%e5%ad%b8-unity-shader-%e4%b8%80%ef%bc%9a%e6%96%b0%e6%89%8b%e5%85%a5%e9%96%80/"
-heroImage: "/assets/migrated/blog/-unity-shader-e716e086cb.png"
+heroImage: "/assets/media/migrated/blog/-unity-shader-e716e086cb-w750.webp"
 draft: false
 ---
 

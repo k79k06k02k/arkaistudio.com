@@ -16,7 +16,7 @@ categories:
 tags:
   []
 sourceUrl: "https://www.arkaistudio.com/blog/2017/07/24/2017-tgdf-%e7%ad%86%e8%a8%98-%e3%80%8a%e7%8d%b8%e9%ad%82%e6%88%b0%e8%b5%b7%e4%be%86%e3%80%8bpostmortem%ef%bc%9a%e6%88%91%e5%80%91%e5%81%9a%e5%b0%8d%e5%92%8c%e5%81%9a%e9%8c%af%e7%9a%84/"
-heroImage: "/assets/migrated/blog/2017-tgdf-_2-27749e3d05.jpg"
+heroImage: "/assets/media/migrated/blog/2017-tgdf-_2-27749e3d05-w750.webp"
 draft: false
 ---
 
@@ -54,7 +54,7 @@ _Jheng-Wei Ciao has six years of game company experience and six years of indepe
 
 ### Types of Taiwanese indie game teams
 
-![TGDF 1](/assets/migrated/blog/tgdf__1-36efd388a8.jpg)
+![TGDF 1](/assets/media/migrated/blog/tgdf__1-36efd388a8-w670.webp)
 
 ### Team composition
 
@@ -66,7 +66,7 @@ _Jheng-Wei Ciao has six years of game company experience and six years of indepe
 
 ### Postmortem lessons
 
-![TGDF 2](/assets/migrated/blog/tgdf__2-ff8418241e.jpg)
+![TGDF 2](/assets/media/migrated/blog/tgdf__2-ff8418241e-w576.webp)
 
 -   What went right
     1.  Found money and people: co-developed with a game company and received publisher funding.

@@ -9,7 +9,7 @@ projectTypes:
   - "INDIE"
   - "MOBILE"
 sourceUrl: "https://www.arkaistudio.com/blog/showcases/portfolio/cosmos-farm/"
-featuredImage: "/assets/migrated/projects/cosmos_farm_4-6864fcaf6f.png"
+featuredImage: "/assets/media/migrated/projects/cosmos_farm_4-6864fcaf6f-w1080.webp"
 gallery:
   []
 videos:

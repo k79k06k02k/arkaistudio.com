@@ -16,7 +16,7 @@ categories:
 tags:
   []
 sourceUrl: "https://www.arkaistudio.com/blog/2017/07/24/2017-tgdf-%e7%ad%86%e8%a8%98-%e3%80%8a%e5%9c%b0%e4%b8%8b%e5%9f%8e%e7%89%a9%e8%aa%9e%e3%80%8b%e2%94%80%e5%86%8d%e6%bb%be%e7%87%99%e7%9a%84%e7%b4%85%e6%b5%b7%e9%83%bd%e6%9c%89%e5%b1%ac%e6%96%bc/"
-heroImage: "/assets/migrated/blog/2017-tgdf-_2-27749e3d05.jpg"
+heroImage: "/assets/media/migrated/blog/2017-tgdf-_2-27749e3d05-w750.webp"
 draft: false
 ---
 
@@ -91,15 +91,15 @@ _Alvin Lo was the overseas operations manager at Xiamen Celadon Digital. He star
 
 ### Internal verification of results
 
-![TGDF\_gdmaze\_1](/assets/migrated/blog/tgdf_gdmaze_1-2d23d34723.jpg)
+![TGDF\_gdmaze\_1](/assets/media/migrated/blog/tgdf_gdmaze_1-2d23d34723-w984.webp)
 
 ### External verification of results
 
-![TGDF\_gdmaze\_2](/assets/migrated/blog/tgdf_gdmaze_2-55ffb97632.jpg)
+![TGDF\_gdmaze\_2](/assets/media/migrated/blog/tgdf_gdmaze_2-55ffb97632-w962.webp)
 
 ### Market demand optimization
 
-![TGDF\_gdmaze\_3](/assets/migrated/blog/tgdf_gdmaze_3-1886a3aed3.jpg)
+![TGDF\_gdmaze\_3](/assets/media/migrated/blog/tgdf_gdmaze_3-1886a3aed3-w977.webp)
 
 ### Operations
 
@@ -136,7 +136,7 @@ _Alvin Lo was the overseas operations manager at Xiamen Celadon Digital. He star
 
 ### In-game ─ A letter from the development team
 
-![TGDF\_gdmaze\_4](/assets/migrated/blog/tgdf_gdmaze_4-576x1024-9a83e73c93.jpg) ![TGDF\_gdmaze\_5](/assets/migrated/blog/tgdf_gdmaze_5-576x1024-a22c96b4d6.jpg) ![TGDF\_gdmaze\_6](/assets/migrated/blog/tgdf_gdmaze_6-576x1024-22097ffd73.jpg)
+![TGDF\_gdmaze\_4](/assets/media/migrated/blog/tgdf_gdmaze_4-576x1024-9a83e73c93-w576.webp) ![TGDF\_gdmaze\_5](/assets/media/migrated/blog/tgdf_gdmaze_5-576x1024-a22c96b4d6-w576.webp) ![TGDF\_gdmaze\_6](/assets/media/migrated/blog/tgdf_gdmaze_6-576x1024-22097ffd73-w576.webp)
 
 ## Attribution
 

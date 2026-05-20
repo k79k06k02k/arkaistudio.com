@@ -16,7 +16,7 @@ categories:
 tags:
   []
 sourceUrl: "https://www.arkaistudio.com/blog/2017/07/24/2017-tgdf-%e7%ad%86%e8%a8%98-%e4%bb%a5%e5%b0%8f%e5%9e%8b%e7%8d%a8%e7%ab%8b%e5%b7%a5%e4%bd%9c%e5%ae%a4%e5%a1%91%e9%80%a0-3d-%e6%97%a5%e5%bc%8f%e5%8b%95%e7%95%ab%e7%95%ab%e8%b3%aa/"
-heroImage: "/assets/migrated/blog/2017-tgdf-_2-27749e3d05.jpg"
+heroImage: "/assets/media/migrated/blog/2017-tgdf-_2-27749e3d05-w750.webp"
 draft: false
 ---
 
@@ -54,11 +54,11 @@ _Kevin Chen founded Route 59 Games in 2015 to create narrative games that combin
 
 ### Quick testing with editing tools
 
-![Necrobarista\_2](/assets/migrated/blog/necrobarista_2-1024x768-3039cfcb5b.jpg)
+![Necrobarista\_2](/assets/media/migrated/blog/necrobarista_2-1024x768-3039cfcb5b-w1024.webp)
 
 ### Basic visual elements: shapes
 
-![Necrobarista\_1](/assets/migrated/blog/necrobarista_1-1024x826-d2da44a683.jpg)
+![Necrobarista\_1](/assets/media/migrated/blog/necrobarista_1-1024x826-d2da44a683-w1024.webp)
 
 ### Basic visual elements: shadows
 
@@ -66,21 +66,21 @@ Manually controlling normals creates more precise shadows and allows separate tr
 
 Reference: [Guilty Gear Xrd's Art Style: The X Factor Between 2D and 3D](https://youtu.be/yhGjCzxJV3E?t=1115)
 
-![Necrobarista\_3](/assets/migrated/blog/necrobarista_3-1024x842-682d5a4e5c.jpg)
+![Necrobarista\_3](/assets/media/migrated/blog/necrobarista_3-1024x842-682d5a4e5c-w1024.webp)
 
 Character and background contrast:
 
-![Necrobarista\_4](/assets/migrated/blog/necrobarista_4-1024x860-95831be79e.jpg)
+![Necrobarista\_4](/assets/media/migrated/blog/necrobarista_4-1024x860-95831be79e-w1024.webp)
 
 ### Basic visual elements: lines
 
 Lines can be treated as shadows.
 
-## ![Necrobarista\_6](/assets/migrated/blog/necrobarista_6-1024x861-7c4f5aac25.jpg)
+## ![Necrobarista\_6](/assets/media/migrated/blog/necrobarista_6-1024x861-7c4f5aac25-w1024.webp)
 
-## ![Necrobarista\_5](/assets/migrated/blog/necrobarista_5-1024x835-a8e506bc9b.jpg)
+## ![Necrobarista\_5](/assets/media/migrated/blog/necrobarista_5-1024x835-a8e506bc9b-w1024.webp)
 
-## ![Necrobarista\_7](/assets/migrated/blog/necrobarista_7-1024x853-c548e034e0.jpg)
+## ![Necrobarista\_7](/assets/media/migrated/blog/necrobarista_7-1024x853-c548e034e0-w1024.webp)
 
 
 
@@ -92,12 +92,12 @@ Lines can be treated as shadows.
 
 Humans can still recognize faces even when perspective is distorted.
 
-![Necrobarista\_9](/assets/migrated/blog/necrobarista_9-1024x847-6f736a2e99.jpg)
-![Necrobarista\_10](/assets/migrated/blog/necrobarista_10-1024x891-0d141fd24e.jpg)
+![Necrobarista\_9](/assets/media/migrated/blog/necrobarista_9-1024x847-6f736a2e99-w1024.webp)
+![Necrobarista\_10](/assets/media/migrated/blog/necrobarista_10-1024x891-0d141fd24e-w1024.webp)
 
 ### Basic visual elements: Gestalt
 
-![Necrobarista\_11](/assets/migrated/blog/necrobarista_11-1024x848-174fdf1619.jpg) ![Necrobarista\_12](/assets/migrated/blog/necrobarista_12-1024x853-0a0e314ae3.jpg) ![Necrobarista\_13](/assets/migrated/blog/necrobarista_13-1024x816-2a0e41be51.jpg)
+![Necrobarista\_11](/assets/media/migrated/blog/necrobarista_11-1024x848-174fdf1619-w1024.webp) ![Necrobarista\_12](/assets/media/migrated/blog/necrobarista_12-1024x853-0a0e314ae3-w1024.webp) ![Necrobarista\_13](/assets/media/migrated/blog/necrobarista_13-1024x816-2a0e41be51-w1024.webp)
 
 ### References
 

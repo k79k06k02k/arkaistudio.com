@@ -9,7 +9,7 @@ projectTypes:
   - "MOBILE"
   - "WORK"
 sourceUrl: "https://www.arkaistudio.com/blog/showcases/portfolio/monster-fable/"
-featuredImage: "/assets/migrated/projects/monster_fable_title-281c9aaf2b.png"
+featuredImage: "/assets/media/migrated/projects/monster_fable_title-281c9aaf2b-w1280.webp"
 gallery:
   []
 videos:
@@ -32,6 +32,6 @@ draft: false
 
 Facebook: [https://www.facebook.com/MonsterFableGlobal/](https://www.facebook.com/MonsterFableGlobal/)
 
-[![](/assets/migrated/projects/google-play-badge-300x116-f1e396fa88.png)](https://play.google.com/store/apps/details?id=com.igg.android.monsterfable)
+[![](/assets/media/migrated/projects/google-play-badge-300x116-f1e396fa88-w300.webp)](https://play.google.com/store/apps/details?id=com.igg.android.monsterfable)
 
-[![](/assets/migrated/projects/app-store-download-badge-8d69dd7f2c.png)](https://apps.apple.com/us/app/monster-fable/id1501803703)
+[![](/assets/media/migrated/projects/app-store-download-badge-8d69dd7f2c-w300.webp)](https://apps.apple.com/us/app/monster-fable/id1501803703)

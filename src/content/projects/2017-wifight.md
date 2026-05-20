@@ -10,7 +10,7 @@ projectTypes:
   - "GAME JAM"
   - "MOBILE"
 sourceUrl: "https://www.arkaistudio.com/blog/showcases/portfolio/wifight/"
-featuredImage: "/assets/migrated/projects/wifight_1-b701457b60.jpg"
+featuredImage: "/assets/media/migrated/projects/wifight_1-b701457b60-w1278.webp"
 gallery:
   []
 videos:

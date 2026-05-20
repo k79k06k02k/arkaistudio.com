@@ -9,7 +9,7 @@ projectTypes:
   - "MOBILE"
   - "WORK"
 sourceUrl: "https://www.arkaistudio.com/blog/showcases/portfolio/independence-day-extinction/"
-featuredImage: "/assets/migrated/projects/independence_day_extinction_special-90f759f669.jpg"
+featuredImage: "/assets/media/migrated/projects/independence_day_extinction_special-90f759f669-w1280.webp"
 gallery:
   []
 videos:
@@ -29,6 +29,6 @@ draft: false
 -   Maintained the project and fixed production issues.
 -   Localized and improved the user experience, including UI and prompt text.
 
-[![](/assets/migrated/projects/google-play-badge-300x116-df2770e693.png)](https://play.google.com/store/apps/details?id=com.lk.idr)
+[![](/assets/media/migrated/projects/google-play-badge-300x116-df2770e693-w300.webp)](https://play.google.com/store/apps/details?id=com.lk.idr)
 
-[![](/assets/migrated/projects/app-store-download-badge-8d69dd7f2c.png)](https://apps.apple.com/app/independence-day-extinction/id1116818232)
+[![](/assets/media/migrated/projects/app-store-download-badge-8d69dd7f2c-w300.webp)](https://apps.apple.com/app/independence-day-extinction/id1116818232)

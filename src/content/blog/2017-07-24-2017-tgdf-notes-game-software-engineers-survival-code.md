@@ -16,7 +16,7 @@ categories:
 tags:
   []
 sourceUrl: "https://www.arkaistudio.com/blog/2017/07/24/2017-tgdf-%e7%ad%86%e8%a8%98-%e9%81%8a%e6%88%b2%e8%bb%9f%e9%ab%94%e5%b7%a5%e7%a8%8b%e5%b8%ab%e7%94%9f%e5%ad%98%e5%ae%88%e5%89%87/"
-heroImage: "/assets/migrated/blog/2017-tgdf-_2-27749e3d05.jpg"
+heroImage: "/assets/media/migrated/blog/2017-tgdf-_2-27749e3d05-w750.webp"
 draft: false
 ---
 
@@ -62,7 +62,7 @@ Roughly 3X programmers out of 14X total staff, or about 20%.
 
 ### Deemo program architecture
 
-![TGDF\_Programmer\_1](/assets/migrated/blog/tgdf_programmer_1-45a6121cda.png)
+![TGDF\_Programmer\_1](/assets/media/migrated/blog/tgdf_programmer_1-45a6121cda-w560.webp)
 
 ### Engineering career
 
@@ -86,11 +86,11 @@ Roughly 3X programmers out of 14X total staff, or about 20%.
     -   Avoid side effects
 -   Onion design
 
-![TGDF\_Programmer\_2](/assets/migrated/blog/tgdf_programmer_2-1024x768-85d49d1092.jpg)
+![TGDF\_Programmer\_2](/assets/media/migrated/blog/tgdf_programmer_2-1024x768-85d49d1092-w1024.webp)
 
 -   Abstract design: interfaces should express intent, not implementation.
 
-![TGDF\_Programmer\_3](/assets/migrated/blog/tgdf_programmer_3-349ed92a59.png)
+![TGDF\_Programmer\_3](/assets/media/migrated/blog/tgdf_programmer_3-349ed92a59-w342.webp)
 
 
 
@@ -114,7 +114,7 @@ Roughly 3X programmers out of 14X total staff, or about 20%.
 -   Engine familiarity
 -   Learning new things
 
-![TGDF\_Programmer\_5](/assets/migrated/blog/tgdf_programmer_5-1024x762-3edf53e74b.jpg)
+![TGDF\_Programmer\_5](/assets/media/migrated/blog/tgdf_programmer_5-1024x762-3edf53e74b-w1024.webp)
 
 ### Direction
 
@@ -122,11 +122,11 @@ Roughly 3X programmers out of 14X total staff, or about 20%.
 
 Being passionate about games is a double-edged sword. If you are not careful, you end up only discussing game content and neglecting engineering fundamentals.
 
-![TGDF\_Programmer\_6](/assets/migrated/blog/tgdf_programmer_6-1024x791-455617296f.jpg)
+![TGDF\_Programmer\_6](/assets/media/migrated/blog/tgdf_programmer_6-1024x791-455617296f-w1024.webp)
 
 -   Become an expert.
 
-![TGDF\_Programmer\_4](/assets/migrated/blog/tgdf_programmer_4-5813033f2c.jpg)
+![TGDF\_Programmer\_4](/assets/media/migrated/blog/tgdf_programmer_4-5813033f2c-w930.webp)
 
 
 

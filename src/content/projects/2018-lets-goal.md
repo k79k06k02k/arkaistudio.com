@@ -9,7 +9,7 @@ projectTypes:
   - "INDIE"
   - "MOBILE"
 sourceUrl: "https://www.arkaistudio.com/blog/showcases/portfolio/lets-goal/"
-featuredImage: "/assets/migrated/projects/lets_goal_special-4a3f054591.jpg"
+featuredImage: "/assets/media/migrated/projects/lets_goal_special-4a3f054591-w545.webp"
 gallery:
   []
 videos:
@@ -30,4 +30,4 @@ draft: false
 -   Connected Google Play Services login and leaderboards.
 -   Released on Google Play, Game Jolt, and itch.io.
 
-[![](/assets/migrated/projects/google-play-badge-300x116-f1e396fa88.png)](https://play.google.com/store/apps/details?id=com.partyavenger.letsgoal)[![](/assets/migrated/projects/game-jolt-badge-0c6a511e2a.png)](https://gamejolt.com/games/lets-goal/350085)[![](/assets/migrated/projects/itch-io-badge-6bd59b8f44.png)](https://arkai.itch.io/lets-goal)
+[![](/assets/media/migrated/projects/google-play-badge-300x116-f1e396fa88-w300.webp)](https://play.google.com/store/apps/details?id=com.partyavenger.letsgoal)[![](/assets/media/migrated/projects/game-jolt-badge-0c6a511e2a-w300.webp)](https://gamejolt.com/games/lets-goal/350085)[![](/assets/media/migrated/projects/itch-io-badge-6bd59b8f44-w300.webp)](https://arkai.itch.io/lets-goal)

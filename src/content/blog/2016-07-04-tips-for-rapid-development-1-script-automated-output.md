@@ -19,7 +19,7 @@ categories:
 tags:
   []
 sourceUrl: "https://www.arkaistudio.com/blog/2016/07/04/%e5%bf%ab%e9%80%9f%e9%96%8b%e7%99%bc%e5%b0%8f%e8%a8%a3%e7%ab%85%e4%b8%80%ef%bc%9ascript-%e8%87%aa%e5%8b%95%e5%8c%96%e7%94%a2%e5%87%ba/"
-heroImage: "/assets/migrated/blog/2171e8f9b6-2171e8f9b6.png"
+heroImage: "/assets/media/migrated/blog/2171e8f9b6-2171e8f9b6-w750.webp"
 draft: false
 ---
 
@@ -66,7 +66,7 @@ $MemberFields
 
 First create folders for the generator.
 
-### ![Folder\_01](/assets/migrated/blog/folder_01-589ff104b3.png)
+### ![Folder\_01](/assets/media/migrated/blog/folder_01-589ff104b3-w166.webp)
 
 -   `Editor`: generator control script.
 -   `GenerateFile`: generated scripts.
@@ -150,11 +150,11 @@ Lines 32-36: Write the generated file.
 
 Run it from `AutoGenerate -> Generate`.
 
-### ![Menu\_01](/assets/migrated/blog/menu_01-91756146d9.png)
+### ![Menu\_01](/assets/media/migrated/blog/menu_01-91756146d9-w547.webp)
 
 The generated scripts appear in the `GenerateFile` folder.
 
-![GenerateFile\_01](/assets/migrated/blog/generatefile_01-1da4a8858a.png)
+![GenerateFile\_01](/assets/media/migrated/blog/generatefile_01-1da4a8858a-w430.webp)
 
 * * *
 
@@ -168,7 +168,7 @@ Unity also released an editor extension for script creation. It supports differe
 
 Required version: Unity 3.4.2 or later.
 
-[![icon\_unity asset store](/assets/migrated/blog/icon_unity-asset-store-a615699422.png)](https://www.assetstore.unity3d.com/en/#!/content/2668)
+[![icon\_unity asset store](/assets/media/migrated/blog/icon_unity-asset-store-a615699422-w212.webp)](https://www.assetstore.unity3d.com/en/#!/content/2668)
 
 ### Postscript
 

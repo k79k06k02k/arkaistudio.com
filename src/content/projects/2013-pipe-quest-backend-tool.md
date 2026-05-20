@@ -10,7 +10,7 @@ projectTypes:
   - "WEB"
   - "WORK"
 sourceUrl: "https://www.arkaistudio.com/blog/showcases/portfolio/pipe-quest-backend-tool/"
-featuredImage: "/assets/migrated/projects/pipe_quest_backend_tool_03-f8735c2d63.png"
+featuredImage: "/assets/media/migrated/projects/pipe_quest_backend_tool_03-f8735c2d63-w1280.webp"
 gallery:
   []
 videos:

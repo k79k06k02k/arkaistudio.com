@@ -1,4 +1,7 @@
 ---
+import ResponsiveImage from "./ResponsiveImage.astro";
+import { getMediaThumbnailSrc } from "../utils/media";
+
 type VideoItem = {
   id: string;
   title?: string;
@@ -11,7 +14,7 @@ type MediaItem =
       id: string;
       title: string;
       cover?: string;
-      thumb: string;
+      thumb?: string;
     }
   | {
       type: "image";
@@ -29,17 +32,17 @@ interface Props {
 const { title, images = [], videos = [] } = Astro.props;
 const cleanImages = [...new Set(images.filter(Boolean))];
 const firstCover = cleanImages[0];
+const thumbnailFor = (src: string | undefined) => getMediaThumbnailSrc(src, "webp") ?? src;
 const videoItems: MediaItem[] = videos
   .filter((video) => video.id)
   .map((video, index) => {
-    const youtubeThumb = `https://img.youtube.com/vi/${video.id}/hqdefault.jpg`;
-    const cover = video.cover ?? (index === 0 ? firstCover : youtubeThumb);
+    const cover = video.cover ?? firstCover;
     return {
       type: "video",
       id: video.id,
       title: video.title ?? `${title} video ${index + 1}`,
       cover,
-      thumb: cover,
+      thumb: thumbnailFor(cover),
     };
   });
 const imageStart = videoItems.length > 0 && firstCover ? 1 : 0;
@@ -47,7 +50,7 @@ const imageItems: MediaItem[] = cleanImages.slice(imageStart).map((src, index) =
   type: "image",
   src,
   title: `${title} screenshot ${index + 1}`,
-  thumb: src,
+  thumb: thumbnailFor(src) ?? src,
 }));
 const firstVideo = videoItems[0];
 const firstVideoUsesFirstCover = Boolean(
@@ -57,7 +60,7 @@ const orderedImageItems: MediaItem[] = firstVideoUsesFirstCover ? imageItems : c
   type: "image",
   src,
   title: `${title} screenshot ${index + 1}`,
-  thumb: src,
+  thumb: thumbnailFor(src) ?? src,
 }));
 const items =
   videoItems.length > 0 && !firstVideoUsesFirstCover && orderedImageItems.length > 0
@@ -84,7 +87,16 @@ const items =
             {item.type === "video" ? (
               <div class="project-video-frame">
                 <button class="project-video-launcher" type="button" data-video-launcher aria-label={`Play ${item.title}`}>
-                  {item.cover ? <img src={item.cover} alt="" loading={index === 0 ? "eager" : "lazy"} /> : null}
+                  {
+                    item.cover ? (
+                      <ResponsiveImage
+                        src={item.cover}
+                        alt=""
+                        loading={index === 0 ? "eager" : "lazy"}
+                        sizes="min(100vw, 1040px)"
+                      />
+                    ) : null
+                  }
                   <span class="project-video-play" aria-hidden="true">
                     <svg viewBox="0 0 48 48" focusable="false">
                       <circle cx="24" cy="24" r="23" />
@@ -94,7 +106,12 @@ const items =
                 </button>
               </div>
             ) : (
-              <img src={item.src} alt="" loading={index === 0 ? "eager" : "lazy"} />
+              <ResponsiveImage
+                src={item.src}
+                alt=""
+                loading={index === 0 ? "eager" : "lazy"}
+                sizes="min(100vw, 1040px)"
+              />
             )}
           </div>
         ))}
@@ -124,7 +141,7 @@ const items =
               aria-label={`Show media ${index + 1}`}
               aria-selected={index === 0 ? "true" : "false"}
             >
-              <img src={item.thumb} alt="" loading="lazy" />
+              {item.thumb ? <img src={item.thumb} alt="" loading="lazy" width="240" height="140" decoding="async" /> : null}
             </button>
           ))}
         </div>

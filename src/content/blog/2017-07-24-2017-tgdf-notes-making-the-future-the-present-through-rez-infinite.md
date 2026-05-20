@@ -16,7 +16,7 @@ categories:
 tags:
   []
 sourceUrl: "https://www.arkaistudio.com/blog/2017/07/24/2017-tgdf-%e7%ad%86%e8%a8%98-%e9%80%8f%e9%81%8e%e3%80%8arez-infinite%e3%80%8b%e8%ae%93%e6%9c%aa%e4%be%86%e6%88%90%e7%82%ba%e7%8f%be%e5%9c%a8/"
-heroImage: "/assets/migrated/blog/2017-tgdf-_2-27749e3d05.jpg"
+heroImage: "/assets/media/migrated/blog/2017-tgdf-_2-27749e3d05-w750.webp"
 draft: false
 ---
 
@@ -67,7 +67,7 @@ The player acts as a hacker eliminating viruses inside geometric space. Every ac
 -   The game is not only visual and auditory; it tries to connect multiple senses into one experience.
 -   Painter Wassily Kandinsky used sensory association in his work, converting touch and sound into color and geometric form.
 
-![Wassily Kandinsky, Composition 8](/assets/migrated/blog/tgdf_rezinfinite_1-76d4d97a80.jpg)
+![Wassily Kandinsky, Composition 8](/assets/media/migrated/blog/tgdf_rezinfinite_1-76d4d97a80-w1000.webp)
 
 [Wassily Kandinsky, Composition 8](https://www.guggenheim.org/artwork/1924)
 
@@ -79,7 +79,7 @@ The player acts as a hacker eliminating viruses inside geometric space. Every ac
 -   Due to technical limitations, it could only become a 2D game at the time
 -   A vibration add-on was created to improve the player experience
 
-![TGDF\_RezInfinite\_2](/assets/migrated/blog/tgdf_rezinfinite_2-2aa64c39c4.jpg)
+![TGDF\_RezInfinite\_2](/assets/media/migrated/blog/tgdf_rezinfinite_2-2aa64c39c4-w640.webp)
 
 ### 2016: Rez Infinite
 
@@ -88,7 +88,7 @@ The player acts as a hacker eliminating viruses inside geometric space. Every ac
     -   Vibrates different body areas according to the music rhythm to create a tactile layer
     -   26 vibrators
 
-![TGDF\_RezInfinite\_3](/assets/migrated/blog/tgdf_rezinfinite_3-1024x538-dc96ac28f9.jpg)
+![TGDF\_RezInfinite\_3](/assets/media/migrated/blog/tgdf_rezinfinite_3-1024x538-dc96ac28f9-w1024.webp)
 
 -   Much of the game's revenue was invested back into synesthesia equipment development.
 -   Mizuguchi wanted to make it badly enough that he borrowed 50 million yen at the early stage.

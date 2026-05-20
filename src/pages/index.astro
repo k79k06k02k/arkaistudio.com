@@ -1,6 +1,7 @@
 ---
 import { getCollection } from "astro:content";
 import BaseLayout from "../layouts/BaseLayout.astro";
+import ResponsiveImage from "../components/ResponsiveImage.astro";
 import SocialLinks from "../components/SocialLinks.astro";
 import { FEATURED_REPOS, SITE } from "../config";
 import { projectPath } from "../utils/content";
@@ -88,7 +89,7 @@ const featuredRepos = FEATURED_REPOS.slice(0, 3);
 
 <BaseLayout title="ARKAI Studio" description={SITE.description}>
   <section class="profile-hero">
-    <img class="profile-avatar" src="/assets/profile/avatar.jpg" alt="Arkai" width="400" height="400" loading="eager" />
+    <img class="profile-avatar" src="/assets/profile/avatar.webp" alt="Arkai" width="400" height="400" loading="eager" />
     <div class="profile-copy">
       <h1>Hi, I’m Arkai.</h1>
       <p class="profile-title">Senior Game Engineer | GenAI | EdTech</p>
@@ -127,7 +128,12 @@ const featuredRepos = FEATURED_REPOS.slice(0, 3);
                         href={project.href}
                         aria-label={`View ${project.title} portfolio`}
                       >
-                        <img src={project.image} alt="" loading="lazy" />
+                        <ResponsiveImage
+                          src={project.image}
+                          alt=""
+                          loading="lazy"
+                          sizes="176px"
+                        />
                         <span class="experience-project-caption">{project.title}</span>
                       </a>
                     ))}

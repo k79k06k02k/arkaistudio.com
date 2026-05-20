@@ -9,7 +9,7 @@ projectTypes:
   - "MOBILE"
   - "WORK"
 sourceUrl: "https://www.arkaistudio.com/blog/showcases/portfolio/pipe-quest-%e6%b0%b4%e7%ae%a1%e5%bd%8e%e5%bd%8e/"
-featuredImage: "/assets/migrated/projects/pipe_quest__2-61ca40db78.jpg"
+featuredImage: "/assets/media/migrated/projects/pipe_quest__2-61ca40db78-w1258.webp"
 gallery:
   []
 videos:

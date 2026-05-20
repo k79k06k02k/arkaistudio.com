@@ -19,7 +19,7 @@ categories:
 tags:
   []
 sourceUrl: "https://www.arkaistudio.com/blog/2016/05/02/%e5%b1%ac%e6%96%bc%e5%b7%a5%e7%a8%8b%e5%b8%ab%e7%9a%84%e5%b0%88%e7%94%a8%e5%b7%a5%e5%85%b7%e7%ae%b1%e5%9b%9b%ef%bc%9a%e6%8e%a8%e8%96%a6-plugin-%e5%85%8d%e8%b2%bb%e7%af%87/"
-heroImage: "/assets/migrated/blog/special-2-8a969f23c2.png"
+heroImage: "/assets/media/migrated/blog/special-2-8a969f23c2-w750.webp"
 draft: false
 ---
 
@@ -40,13 +40,13 @@ draft: false
 
 ### DOTween (tween animation)
 
-![](/assets/migrated/blog/splash_dotween-1eae373886.png)
+![](/assets/media/migrated/blog/splash_dotween-1eae373886-w640.webp)
 
 DOTween quickly creates tween animations for 3D objects, 2D objects, UI, audio, materials, lights, and more.
 
 Required version: Unity 3.5.7 or later.
 
-### [![icon\_unity asset store](/assets/migrated/blog/icon_unity-asset-store-a615699422.png)](https://www.assetstore.unity3d.com/en/#!/content/27676)
+### [![icon\_unity asset store](/assets/media/migrated/blog/icon_unity-asset-store-a615699422-w212.webp)](https://www.assetstore.unity3d.com/en/#!/content/27676)
 
 
 
@@ -58,7 +58,7 @@ Instant Screenshot captures high-resolution images through a Camera.
 
 Required version: Unity 4.5.5 or later.
 
-### [![icon\_unity asset store](/assets/migrated/blog/icon_unity-asset-store-a615699422.png)](https://www.assetstore.unity3d.com/en/#!/content/24122)
+### [![icon\_unity asset store](/assets/media/migrated/blog/icon_unity-asset-store-a615699422-w212.webp)](https://www.assetstore.unity3d.com/en/#!/content/24122)
 
 
 
@@ -70,7 +70,7 @@ Sorting View displays the Sorting Layer and Order in Layer for current Sprite ob
 
 Required version: Unity 4.6.3 or later.
 
-### [![icon\_unity asset store](/assets/migrated/blog/icon_unity-asset-store-a615699422.png)](https://www.assetstore.unity3d.com/en/#!/content/16505)
+### [![icon\_unity asset store](/assets/media/migrated/blog/icon_unity-asset-store-a615699422-w212.webp)](https://www.assetstore.unity3d.com/en/#!/content/16505)
 
 
 
@@ -80,7 +80,7 @@ Log Viewer displays logs, device information, response time, and other debug dat
 
 Required version: Unity 4.0.0 or later.
 
-### [![icon\_unity asset store](/assets/migrated/blog/icon_unity-asset-store-a615699422.png)](https://www.assetstore.unity3d.com/en/#!/content/12047)
+### [![icon\_unity asset store](/assets/media/migrated/blog/icon_unity-asset-store-a615699422-w212.webp)](https://www.assetstore.unity3d.com/en/#!/content/12047)
 
 
 
@@ -104,19 +104,19 @@ Cinema Themes 2 applies camera effects such as nostalgic, night, beach, and arct
 
 Required version: Unity 4.6.1 or later.
 
-### [![icon\_unity asset store](/assets/migrated/blog/icon_unity-asset-store-a615699422.png)](https://www.assetstore.unity3d.com/en/#!/content/20394)
+### [![icon\_unity asset store](/assets/media/migrated/blog/icon_unity-asset-store-a615699422-w212.webp)](https://www.assetstore.unity3d.com/en/#!/content/20394)
 
 
 
 ### Ruler 2D (2D alignment, ruler, grid tools)
 
-### ![](/assets/migrated/blog/bloghome-d735832bf2.png)
+### ![](/assets/media/migrated/blog/bloghome-d735832bf2-w519.webp)
 
 Ruler 2D displays rulers, custom grids, multi-object alignment tools, and distribution tools in the Scene view.
 
 Required version: Unity 5.3.4 or later.
 
-### [![icon\_unity asset store](/assets/migrated/blog/icon_unity-asset-store-a615699422.png)](https://www.assetstore.unity3d.com/en/#!/content/53951)
+### [![icon\_unity asset store](/assets/media/migrated/blog/icon_unity-asset-store-a615699422-w212.webp)](https://www.assetstore.unity3d.com/en/#!/content/53951)
 
 
 
@@ -126,7 +126,7 @@ Create Script Dialog is an official Unity editor extension for script generation
 
 Required version: Unity 3.4.2 or later.
 
-[![icon\_unity asset store](/assets/migrated/blog/icon_unity-asset-store-a615699422.png)](https://www.assetstore.unity3d.com/en/#!/content/2668)
+[![icon\_unity asset store](/assets/media/migrated/blog/icon_unity-asset-store-a615699422-w212.webp)](https://www.assetstore.unity3d.com/en/#!/content/2668)
 
 * * *
 

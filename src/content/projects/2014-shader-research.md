@@ -9,7 +9,7 @@ projectTypes:
   - "OPEN SOURCE"
   - "UNITY"
 sourceUrl: "https://www.arkaistudio.com/blog/showcases/portfolio/shader-research/"
-featuredImage: "/assets/migrated/projects/shader_research_6-2a30f01668.jpg"
+featuredImage: "/assets/media/migrated/projects/shader_research_6-2a30f01668-w1052.webp"
 gallery:
   []
 videos:
@@ -28,4 +28,4 @@ A first Unity shader study project focused on small tools and visual effects.
 -   Simulated vertex positions with a small tooling workflow.
 -   Implemented blur, tint, frosted glass, distortion, and lens post-processing effects.
 
-[![](/assets/migrated/projects/github-badge-0c6e072891.png)](https://github.com/k79k06k02k/Shader)
+[![](/assets/media/migrated/projects/github-badge-0c6e072891-w300.webp)](https://github.com/k79k06k02k/Shader)

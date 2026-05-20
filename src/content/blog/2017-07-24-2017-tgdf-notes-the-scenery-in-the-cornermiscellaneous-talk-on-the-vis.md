@@ -16,7 +16,7 @@ categories:
 tags:
   []
 sourceUrl: "https://www.arkaistudio.com/blog/2017/07/24/2017-tgdf-%e7%ad%86%e8%a8%98-%e8%a7%92%e9%82%8a%e4%b8%ad%e7%9a%84%e9%a2%a8%e6%99%af%e2%94%80%e3%80%8aqubot-%e5%83%8f%e7%b4%a0%e6%88%b0%e6%a9%9f%e3%80%8b%e7%9a%84%e8%a6%96%e8%a6%ba%e5%89%b5/"
-heroImage: "/assets/migrated/blog/2017-tgdf-_2-27749e3d05.jpg"
+heroImage: "/assets/media/migrated/blog/2017-tgdf-_2-27749e3d05-w750.webp"
 draft: false
 ---
 
@@ -56,7 +56,7 @@ _Louis Lu has worked on several well-known games in Taiwan and overseas. He is a
 
 Players created robots through [SpaceQube](http://www.spacequbegame.com/).
 
-![TGDF\_Qubot\_1](/assets/migrated/blog/tgdf_qubot_1-1024x678-ead8c0f2fb.jpg)
+![TGDF\_Qubot\_1](/assets/media/migrated/blog/tgdf_qubot_1-1024x678-ead8c0f2fb-w1024.webp)
 
 ### Homemade engine
 
@@ -64,30 +64,30 @@ LynxEngine supports dynamic voxel computation, using 3D pixels as the visual fou
 
 ### Visual performance challenges
 
-![TGDF\_Qubot\_2](/assets/migrated/blog/tgdf_qubot_2-1024x695-3ce57e1a47.jpg)
+![TGDF\_Qubot\_2](/assets/media/migrated/blog/tgdf_qubot_2-1024x695-3ce57e1a47-w1024.webp)
 
 ### Style concept sketches
 
-![TGDF\_Qubot\_3](/assets/migrated/blog/tgdf_qubot_3-315454a476.jpg) ![TGDF\_Qubot\_4](/assets/migrated/blog/tgdf_qubot_4-4448a86b17.jpg) ![TGDF\_Qubot\_5](/assets/migrated/blog/tgdf_qubot_5-2f7d21aaf8.jpg) ![TGDF\_Qubot\_6](/assets/migrated/blog/tgdf_qubot_6-1099d421ff.jpg) ![TGDF\_Qubot\_7](/assets/migrated/blog/tgdf_qubot_7-0f064d1a24.jpg)
+![TGDF\_Qubot\_3](/assets/media/migrated/blog/tgdf_qubot_3-315454a476-w952.webp) ![TGDF\_Qubot\_4](/assets/media/migrated/blog/tgdf_qubot_4-4448a86b17-w974.webp) ![TGDF\_Qubot\_5](/assets/media/migrated/blog/tgdf_qubot_5-2f7d21aaf8-w920.webp) ![TGDF\_Qubot\_6](/assets/media/migrated/blog/tgdf_qubot_6-1099d421ff-w908.webp) ![TGDF\_Qubot\_7](/assets/media/migrated/blog/tgdf_qubot_7-0f064d1a24-w962.webp)
 
 ### Game prototype
 
-![TGDF\_Qubot\_8](/assets/migrated/blog/tgdf_qubot_8-d6e596a1de.jpg)
+![TGDF\_Qubot\_8](/assets/media/migrated/blog/tgdf_qubot_8-d6e596a1de-w742.webp)
 
 ### Finalized style test
 
-![TGDF\_Qubot\_9](/assets/migrated/blog/tgdf_qubot_9-8d2ea9ed97.jpg)
+![TGDF\_Qubot\_9](/assets/media/migrated/blog/tgdf_qubot_9-8d2ea9ed97-w698.webp)
 
 ### Later polish and visual refinement
 
-![TGDF\_Qubot\_10](/assets/migrated/blog/tgdf_qubot_10-df0d6ce2b0.jpg)
+![TGDF\_Qubot\_10](/assets/media/migrated/blog/tgdf_qubot_10-df0d6ce2b0-w676.webp)
 
 ### Development schedule
 
 -   After testing, the response in Japan was strong, so the team planned development for the Japanese market.
 -   Because the game was similar to Monster Strike, the gameplay was significantly revised.
 
-![TGDF\_Qubot\_11](/assets/migrated/blog/tgdf_qubot_11-4a24156086.jpg)
+![TGDF\_Qubot\_11](/assets/media/migrated/blog/tgdf_qubot_11-4a24156086-w872.webp)
 
 ### Web version mecha editor
 

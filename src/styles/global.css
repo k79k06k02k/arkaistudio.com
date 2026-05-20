@@ -93,6 +93,10 @@ img {
   max-width: 100%;
 }
 
+.responsive-picture {
+  display: contents;
+}
+
 main {
   width: min(1120px, calc(100% - 32px));
   margin: 0 auto;
@@ -954,7 +958,9 @@ main {
   pointer-events: auto;
 }
 
-.project-media-slide > img {
+.project-media-slide > img,
+.project-media-slide > .responsive-picture,
+.project-media-slide > .responsive-picture > img {
   display: block;
   width: 100%;
   height: 100%;
@@ -962,7 +968,9 @@ main {
   object-position: center;
 }
 
-.project-video-launcher > img {
+.project-video-launcher > img,
+.project-video-launcher > .responsive-picture,
+.project-video-launcher > .responsive-picture > img {
   display: block;
   width: 100%;
   height: 100%;

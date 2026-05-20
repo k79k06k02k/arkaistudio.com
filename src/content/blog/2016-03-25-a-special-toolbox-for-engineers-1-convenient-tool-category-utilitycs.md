@@ -19,7 +19,7 @@ categories:
 tags:
   []
 sourceUrl: "https://www.arkaistudio.com/blog/2016/03/25/%e5%b1%ac%e6%96%bc%e5%b7%a5%e7%a8%8b%e5%b8%ab%e7%9a%84%e5%b0%88%e7%94%a8%e5%b7%a5%e5%85%b7%e7%ae%b1%e4%b8%80%ef%bc%9a%e4%be%bf%e6%8d%b7%e5%b7%a5%e5%85%b7%e9%a1%9e%e5%88%a5utility-cs/"
-heroImage: "/assets/migrated/blog/special-2-8a969f23c2.png"
+heroImage: "/assets/media/migrated/blog/special-2-8a969f23c2-w750.webp"
 draft: false
 ---
 

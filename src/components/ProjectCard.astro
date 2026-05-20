@@ -1,4 +1,5 @@
 ---
+import ResponsiveImage from "./ResponsiveImage.astro";
 import type { Project } from "../utils/content";
 import { projectPath } from "../utils/content";
 
@@ -16,7 +17,12 @@ const filterTypes = projectTypes.map((type) => type.toLowerCase()).join("|");
   <a class="project-image" href={href}>
     {
       project.data.featuredImage ? (
-        <img src={project.data.featuredImage} alt="" loading="lazy" />
+        <ResponsiveImage
+          src={project.data.featuredImage}
+          alt=""
+          loading="lazy"
+          sizes="(min-width: 920px) 30vw, (min-width: 620px) 45vw, calc(100vw - 40px)"
+        />
       ) : (
         <span>{project.data.title}</span>
       )

@@ -9,7 +9,7 @@ projectTypes:
   - "MOBILE"
   - "WORK"
 sourceUrl: "https://www.arkaistudio.com/blog/showcases/portfolio/supercharged/"
-featuredImage: "/assets/migrated/projects/supercharged-_4-3842e96593.jpg"
+featuredImage: "/assets/media/migrated/projects/supercharged-_4-3842e96593-w1280.webp"
 gallery:
   []
 videos:

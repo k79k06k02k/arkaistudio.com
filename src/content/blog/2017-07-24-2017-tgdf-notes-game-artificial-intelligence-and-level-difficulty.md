@@ -16,7 +16,7 @@ categories:
 tags:
   []
 sourceUrl: "https://www.arkaistudio.com/blog/2017/07/24/2017-tgdf-%e7%ad%86%e8%a8%98-%e9%81%8a%e6%88%b2%e4%ba%ba%e5%b7%a5%e6%99%ba%e6%85%a7%e8%88%87%e9%97%9c%e5%8d%a1%e9%9b%a3%e6%98%93%e5%ba%a6/"
-heroImage: "/assets/migrated/blog/2017-tgdf-_2-27749e3d05.jpg"
+heroImage: "/assets/media/migrated/blog/2017-tgdf-_2-27749e3d05-w750.webp"
 draft: false
 ---
 
@@ -86,32 +86,32 @@ _Wen-Kai Tai is a professor at National Taiwan University of Science and Technol
 
 Game flow:
 
-![TGDF\_AI\_1](/assets/migrated/blog/tgdf_ai_1-1024x626-84b7d77429.jpg)
+![TGDF\_AI\_1](/assets/media/migrated/blog/tgdf_ai_1-1024x626-84b7d77429-w1024.webp)
 
 Decision process:
 
 `Player portfolio -> Strike action generation -> Table state evaluation -> Ball selection -> Shot execution`
 
-![TGDF\_AI\_2](/assets/migrated/blog/tgdf_ai_2-9b470c73de.jpg)
+![TGDF\_AI\_2](/assets/media/migrated/blog/tgdf_ai_2-9b470c73de-w996.webp)
 
 Player portfolio: strategy and skill settings.
 
-![TGDF\_AI\_3](/assets/migrated/blog/tgdf_ai_3-1024x750-64d6daf6e2.jpg)
+![TGDF\_AI\_3](/assets/media/migrated/blog/tgdf_ai_3-1024x750-64d6daf6e2-w1024.webp)
 
 Strike action generation:
 
 `Select hittable ball -> Select possible pocket -> Choose shot type -> Refine aim direction -> Search and optimize force`
 
-![TGDF\_AI\_4](/assets/migrated/blog/tgdf_ai_4-cb61b26b53.jpg)
-![TGDF\_AI\_5](/assets/migrated/blog/tgdf_ai_5-334a05213e.jpg)
+![TGDF\_AI\_4](/assets/media/migrated/blog/tgdf_ai_4-cb61b26b53-w935.webp)
+![TGDF\_AI\_5](/assets/media/migrated/blog/tgdf_ai_5-334a05213e-w830.webp)
 
 Table state evaluation:
 
 `Hit difficulty evaluation -> Ball evaluation -> Ball group evaluation -> Shot evaluation`
 
-![TGDF\_AI\_6](/assets/migrated/blog/tgdf_ai_6-5ca22fc23d.jpg)
+![TGDF\_AI\_6](/assets/media/migrated/blog/tgdf_ai_6-5ca22fc23d-w930.webp)
 
-![TGDF\_AI\_7](/assets/migrated/blog/tgdf_ai_7-820e094851.jpg)
+![TGDF\_AI\_7](/assets/media/migrated/blog/tgdf_ai_7-820e094851-w898.webp)
 
 
 
@@ -123,7 +123,7 @@ Select target ball:
 
 AI portfolio:
 
-![TGDF\_AI\_8](/assets/migrated/blog/tgdf_ai_8-172ef515dc.jpg)
+![TGDF\_AI\_8](/assets/media/migrated/blog/tgdf_ai_8-172ef515dc-w948.webp)
 
 -   Shot generation
 -   Table state evaluation
@@ -132,19 +132,19 @@ AI portfolio:
 
 Control AI through profiles:
 
-![TGDF\_AI\_9](/assets/migrated/blog/tgdf_ai_9-c55be3c484.jpg)
+![TGDF\_AI\_9](/assets/media/migrated/blog/tgdf_ai_9-c55be3c484-w910.webp)
 
 Table state estimation - combat behavior:
 
-![TGDF\_AI\_10](/assets/migrated/blog/tgdf_ai_10-396b7497d8.jpg)
+![TGDF\_AI\_10](/assets/media/migrated/blog/tgdf_ai_10-396b7497d8-w798.webp)
 
 Table state estimation - core process architecture:
 
-![TGDF\_AI\_11](/assets/migrated/blog/tgdf_ai_11-fa018ab078.jpg)
+![TGDF\_AI\_11](/assets/media/migrated/blog/tgdf_ai_11-fa018ab078-w900.webp)
 
 Table state estimation - experimental results:
 
-![TGDF\_AI\_12](/assets/migrated/blog/tgdf_ai_12-77b1ce6b83.jpg)
+![TGDF\_AI\_12](/assets/media/migrated/blog/tgdf_ai_12-77b1ce6b83-w896.webp)
 
 ### References
 

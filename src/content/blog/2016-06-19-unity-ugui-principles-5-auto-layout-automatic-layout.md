@@ -19,7 +19,7 @@ categories:
 tags:
   []
 sourceUrl: "https://www.arkaistudio.com/blog/2016/06/19/unity-ugui-%e5%8e%9f%e7%90%86%e7%af%87%e4%ba%94%ef%bc%9aauto-layout-%e8%87%aa%e5%8b%95%e4%bd%88%e5%b1%80/"
-heroImage: "/assets/migrated/blog/special-1-a9491c6460.png"
+heroImage: "/assets/media/migrated/blog/special-1-a9491c6460-w750.webp"
 draft: false
 ---
 
@@ -62,13 +62,13 @@ The system has two main parts:
 
 The basic architecture looks like this. This article focuses on the concept first; implementation details come later.
 
-### ![AutoLayoutSystem\_01](/assets/migrated/blog/autolayoutsystem_01-1bac8f5958.png)
+### ![AutoLayoutSystem\_01](/assets/media/migrated/blog/autolayoutsystem_01-1bac8f5958-w848.webp)
 
 
 
 ### [Layout Element (child object)](http://docs.unity3d.com/Manual/script-LayoutElement.html)
 
-### ![](/assets/migrated/blog/layoutelement_01-98a0633667.png)
+### ![](/assets/media/migrated/blog/layoutelement_01-98a0633667-w412.webp)
 
 Layout Element describes the size requirements of an element:
 
@@ -81,8 +81,8 @@ Layout Element describes the size requirements of an element:
 
 After selecting a UI element, switch to Layout Properties at the bottom of the Inspector to inspect these values.
 
-![LayoutElement\_05](/assets/migrated/blog/layoutelement_05-3502bcd9b3.png)
-![LayoutElement\_03](/assets/migrated/blog/layoutelement_03-9f63515e4b.png)
+![LayoutElement\_05](/assets/media/migrated/blog/layoutelement_05-3502bcd9b3-w560.webp)
+![LayoutElement\_03](/assets/media/migrated/blog/layoutelement_03-9f63515e4b-w428.webp)
 
 Layout Controllers read Layout Element sizes and allocate children with these rules:
 
@@ -92,9 +92,9 @@ Layout Controllers read Layout Element sizes and allocate children with these ru
 
 The following images show how width is allocated.
 
-### ![LayoutElement\_01](/assets/migrated/blog/layoutelement_01-98a0633667.png)
+### ![LayoutElement\_01](/assets/media/migrated/blog/layoutelement_01-98a0633667-w412.webp)
 
-### ![LayoutElement\_02](/assets/migrated/blog/layoutelement_02-7345f20d92.png)
+### ![LayoutElement\_02](/assets/media/migrated/blog/layoutelement_02-7345f20d92-w974.webp)
 
 -   Allocate Minimum Size first: 300, shown in red.
 -   If enough space remains, allocate Preferred Size: 300-500, shown in green.
@@ -102,7 +102,7 @@ The following images show how width is allocated.
 
 Flexible sizing is proportional. If multiple children have Flexible values, extra space is distributed according to those values. In the example below, `0.3` and `0.7` produce a `3:7` ratio.
 
-### ![LayoutElement\_04](/assets/migrated/blog/layoutelement_04-10713af445.png)
+### ![LayoutElement\_04](/assets/media/migrated/blog/layoutelement_04-10713af445-w624.webp)
 
 One more detail: [Text](http://docs.unity3d.com/Manual/script-Text.html) and [Image](http://docs.unity3d.com/Manual/script-Image.html) components automatically calculate Preferred Size from their content.
 
@@ -116,7 +116,7 @@ Layout Groups can be nested and come in three common types: [Horizontal](http://
 
 #### [Horizontal Layout Group](http://docs.unity3d.com/Manual/script-HorizontalLayoutGroup.html)
 
-![HorizontalLayoutGroup\_00](/assets/migrated/blog/horizontallayoutgroup_00-2d24953896.png)
+![HorizontalLayoutGroup\_00](/assets/media/migrated/blog/horizontallayoutgroup_00-2d24953896-w430.webp)
 
 Horizontal Layout Group arranges child objects along the horizontal axis.
 
@@ -135,19 +135,19 @@ Example setup:
 4.  Add Horizontal Layout Group to that parent object.
 5.  Create five Button children under the parent. Their sizes update automatically when the parent changes.
 
-![HorizontalLayoutGroup\_02](/assets/migrated/blog/horizontallayoutgroup_02-888a888b8e.gif)
+![HorizontalLayoutGroup\_02](/assets/media/migrated/blog/horizontallayoutgroup_02-888a888b8e-animated.webp)
 
 At this point, the Button RectTransforms cannot be edited directly because the Horizontal Layout Group controls them. Unity shows which Layout Group is controlling the RectTransform.
 
-![HorizontalLayoutGroup\_09](/assets/migrated/blog/horizontallayoutgroup_09-892350fb8e.png)
+![HorizontalLayoutGroup\_09](/assets/media/migrated/blog/horizontallayoutgroup_09-892350fb8e-w413.webp)
 
 Adjust Padding to see the internal spacing.
 
-![HorizontalLayoutGroup\_03](/assets/migrated/blog/horizontallayoutgroup_03-ff09e6fe11.png)
+![HorizontalLayoutGroup\_03](/assets/media/migrated/blog/horizontallayoutgroup_03-ff09e6fe11-w544.webp)
 
 Adjust Spacing to see the gap between elements.
 
-![HorizontalLayoutGroup\_04](/assets/migrated/blog/horizontallayoutgroup_04-98f247f8fb.png)
+![HorizontalLayoutGroup\_04](/assets/media/migrated/blog/horizontallayoutgroup_04-98f247f8fb-w620.webp)
 
 Next, add Layout Element to the five Buttons so their default sizes can be overridden manually.
 
@@ -163,36 +163,36 @@ Review the allocation rules:
 
 Set the Min Width values of the five Buttons to `20`, `30`, `40`, `50`, and `60`. You can see each Button's width distribution. Changing the parent size does not change the children yet, because only Minimum Width has been allocated.
 
-![HorizontalLayoutGroup\_11](/assets/migrated/blog/horizontallayoutgroup_11-9074ecd7ec.gif)
+![HorizontalLayoutGroup\_11](/assets/media/migrated/blog/horizontallayoutgroup_11-9074ecd7ec-animated.webp)
 
 Change Child Alignment to see how the elements align inside the parent.
 
-![HorizontalLayoutGroup\_16](/assets/migrated/blog/horizontallayoutgroup_16-761e675b81.gif)
+![HorizontalLayoutGroup\_16](/assets/media/migrated/blog/horizontallayoutgroup_16-761e675b81-animated.webp)
 
 Parent Layout Properties:
 
 `Min Width = button widths (20 + 30 + 40 + 50 + 60 = 200) + Spacing (40) + left/right Padding (20) = 260`
 
-![HorizontalLayoutGroup\_10](/assets/migrated/blog/horizontallayoutgroup_10-64a651a6ea.png)
+![HorizontalLayoutGroup\_10](/assets/media/migrated/blog/horizontallayoutgroup_10-64a651a6ea-w427.webp)
 
 Now adjust the first Button's Layout Element as shown below and set Preferred Width to `100`.
 
-![HorizontalLayoutGroup\_13](/assets/migrated/blog/horizontallayoutgroup_13-7cbab4c058.png)
+![HorizontalLayoutGroup\_13](/assets/media/migrated/blog/horizontallayoutgroup_13-7cbab4c058-w423.webp)
 
 1.  Allocate Minimum Size first: `20`.
 2.  If enough space remains, allocate Preferred Size from `20` to `100`.
 
-![HorizontalLayoutGroup\_12](/assets/migrated/blog/horizontallayoutgroup_12-84b29a8926.gif)
+![HorizontalLayoutGroup\_12](/assets/media/migrated/blog/horizontallayoutgroup_12-84b29a8926-animated.webp)
 
 Next, set Flexible Width to `1`.
 
-![HorizontalLayoutGroup\_14](/assets/migrated/blog/horizontallayoutgroup_14-45143c561f.png)
+![HorizontalLayoutGroup\_14](/assets/media/migrated/blog/horizontallayoutgroup_14-45143c561f-w422.webp)
 
 -   Allocate Minimum Size first: `20`.
 -   If enough space remains, allocate Preferred Size from `20` to `100`.
 -   If extra space remains, allocate the remaining Flexible Size.
 
-![HorizontalLayoutGroup\_15](/assets/migrated/blog/horizontallayoutgroup_15-b493d25d06.gif)
+![HorizontalLayoutGroup\_15](/assets/media/migrated/blog/horizontallayoutgroup_15-b493d25d06-animated.webp)
 
 Now enable Child Force Expand Width on the Horizontal Layout Group to force child objects to fill the available space.
 
@@ -200,13 +200,13 @@ Now enable Child Force Expand Width on the Horizontal Layout Group to force chil
 -   If enough space remains, allocate Preferred Size from `20` to `100`.
 -   If extra space remains, allocate Flexible Size and Child Force Expand Width.
 
-![HorizontalLayoutGroup\_17](/assets/migrated/blog/horizontallayoutgroup_17-25ef6fbc8b.gif)
+![HorizontalLayoutGroup\_17](/assets/media/migrated/blog/horizontallayoutgroup_17-25ef6fbc8b-animated.webp)
 
 Conclusion: Horizontal Layout Group allocates Minimum Size first, then Preferred Size, then Flexible Size and Child Force Expand. That is the core rule behind how it reads Layout Element values and assigns child sizes.
 
 #### [Vertical Layout Group](http://docs.unity3d.com/Manual/script-VerticalLayoutGroup.html)
 
-![VerticalLayoutGroup\_00](/assets/migrated/blog/verticallayoutgroup_00-7546773767.png)
+![VerticalLayoutGroup\_00](/assets/media/migrated/blog/verticallayoutgroup_00-7546773767-w428.webp)
 
 Vertical Layout Group arranges child objects along the vertical axis. It works the same way as Horizontal Layout Group, but uses height instead of width.
 
@@ -214,7 +214,7 @@ Component path: `Component -> Layout -> Vertical Layout Group`.
 
 #### [Grid Layout Group](http://docs.unity3d.com/Manual/script-GridLayoutGroup.html)
 
-![GridLayoutGroup\_00](/assets/migrated/blog/gridlayoutgroup_00-98109dde32.png)
+![GridLayoutGroup\_00](/assets/media/migrated/blog/gridlayoutgroup_00-98109dde32-w429.webp)
 
 Grid Layout Group arranges child objects in a grid.
 
@@ -223,16 +223,16 @@ Component path: `Component -> Layout -> Grid Layout Group`.
 -   Padding: internal spacing.
 -   Cell Size: width and height of each element.
 
-![GridLayoutGroup\_01](/assets/migrated/blog/gridlayoutgroup_01-10598d1d73.gif)
+![GridLayoutGroup\_01](/assets/media/migrated/blog/gridlayoutgroup_01-10598d1d73-animated.webp)
 
 -   Spacing: space between elements.
 -   Start Corner: the corner where layout starts: upper left, upper right, lower left, or lower right.
 
-![GridLayoutGroup\_02](/assets/migrated/blog/gridlayoutgroup_02-e3d013c245.gif)
+![GridLayoutGroup\_02](/assets/media/migrated/blog/gridlayoutgroup_02-e3d013c245-animated.webp)
 
 -   Start Axis: horizontal or vertical arrangement.
 
-![GridLayoutGroup\_03](/assets/migrated/blog/gridlayoutgroup_03-6319ea02da.gif)
+![GridLayoutGroup\_03](/assets/media/migrated/blog/gridlayoutgroup_03-6319ea02da-animated.webp)
 
 -   Child Alignment: alignment when children do not fill all available space.
 -   Constraint: layout restriction.
@@ -248,7 +248,7 @@ Layout Fitters control the size of the Layout Controller itself. The size can co
 
 #### [Content Size Fitter](http://docs.unity3d.com/Manual/script-ContentSizeFitter.html)
 
-![ContentSizeFitter\_00](/assets/migrated/blog/contentsizefitter_00-ea8b365b20.png)
+![ContentSizeFitter\_00](/assets/media/migrated/blog/contentsizefitter_00-ea8b365b20-w459.webp)
 
 Content Size Fitter controls the size of the parent object based on the Minimum or Preferred size of its child objects. The resize direction can be changed through Pivot.
 
@@ -261,7 +261,7 @@ Component path: `Component -> Layout -> Content Size Fitter`.
 
 Example requirement: make the parent size follow the child size. The result looks like this. A black outline is added so the parent size is easier to see.
 
-#### ![ContentSizeFitter\_02](/assets/migrated/blog/contentsizefitter_02-709b1c9fa7.gif)
+#### ![ContentSizeFitter\_02](/assets/media/migrated/blog/contentsizefitter_02-709b1c9fa7-animated.webp)
 
 Setup:
 
@@ -273,7 +273,7 @@ Setup:
 
 At this stage, Horizontal Layout Group controls the child size through Layout Element values, but it does not resize the parent itself.
 
-#### ![ContentSizeFitter\_01](/assets/migrated/blog/contentsizefitter_01-32d2a1efbe.gif)
+#### ![ContentSizeFitter\_01](/assets/media/migrated/blog/contentsizefitter_01-32d2a1efbe-animated.webp)
 
 Add Layout Element to the Button, override the default size, and set Minimum Width to `100`.
 
@@ -281,21 +281,21 @@ Component path: `Component -> Layout -> Layout Element`.
 
 Add Content Size Fitter to the parent. Set Horizontal Fit to `Min Size`, so the parent width comes from the child's Minimum Width.
 
-![ContentSizeFitter\_04](/assets/migrated/blog/contentsizefitter_04-78ef2680a1.png)
+![ContentSizeFitter\_04](/assets/media/migrated/blog/contentsizefitter_04-78ef2680a1-w426.webp)
 
 If you duplicate the Button, the parent size now changes with the children.
 
-![ContentSizeFitter\_02](/assets/migrated/blog/contentsizefitter_02-709b1c9fa7.gif)
+![ContentSizeFitter\_02](/assets/media/migrated/blog/contentsizefitter_02-709b1c9fa7-animated.webp)
 
 Adjust the parent's Pivot to control the resize direction.
 
-![ContentSizeFitter\_03](/assets/migrated/blog/contentsizefitter_03-eb9659b229.gif)
+![ContentSizeFitter\_03](/assets/media/migrated/blog/contentsizefitter_03-eb9659b229-animated.webp)
 
 The full pattern is: use Horizontal Layout Group to arrange child objects, use Layout Element to define child size, then use Content Size Fitter to make the parent read those child sizes and resize itself.
 
 #### [Aspect Ratio Fitter](http://docs.unity3d.com/Manual/script-AspectRatioFitter.html)
 
-![AspectRatioFitter\_00](/assets/migrated/blog/aspectratiofitter_00-d00f94e0a9.png)
+![AspectRatioFitter\_00](/assets/media/migrated/blog/aspectratiofitter_00-d00f94e0a9-w424.webp)
 
 Aspect Ratio Fitter controls the size of the parent object based on an aspect ratio. Pivot controls the resize direction.
 
@@ -306,35 +306,35 @@ Aspect Mode options:
 -   None: no adjustment.
 -   Width Controls Height: width drives height according to the ratio.
 
-#### ![AspectRatioFitter\_01\_01](/assets/migrated/blog/aspectratiofitter_01_01-ad20123b4a.gif)
+#### ![AspectRatioFitter\_01\_01](/assets/media/migrated/blog/aspectratiofitter_01_01-ad20123b4a-animated.webp)
 
 When width changes, height changes proportionally.
 
-![AspectRatioFitter\_01\_02](/assets/migrated/blog/aspectratiofitter_01_02-76da080bc3.gif)
+![AspectRatioFitter\_01\_02](/assets/media/migrated/blog/aspectratiofitter_01_02-76da080bc3-animated.webp)
 
 Height Controls Width uses height as the base and changes width according to the ratio.
 
-#### ![AspectRatioFitter\_02\_01](/assets/migrated/blog/aspectratiofitter_02_01-938104db52.gif)
+#### ![AspectRatioFitter\_02\_01](/assets/media/migrated/blog/aspectratiofitter_02_01-938104db52-animated.webp)
 
 When height changes, width changes proportionally.
 
-![AspectRatioFitter\_02\_02](/assets/migrated/blog/aspectratiofitter_02_02-b575474ea5.gif)
+![AspectRatioFitter\_02\_02](/assets/media/migrated/blog/aspectratiofitter_02_02-b575474ea5-animated.webp)
 
 Fit In Parent automatically adjusts width, height, position, and anchors so the graphic fits entirely inside the parent. It may leave empty space.
 
-![](/assets/migrated/blog/aspectratiofitter_03_03-542fae9c98.gif)
+![](/assets/media/migrated/blog/aspectratiofitter_03_03-542fae9c98-animated.webp)
 
 When the parent size changes, the object fits inside it according to the ratio.
 
-![AspectRatioFitter\_03\_02](/assets/migrated/blog/aspectratiofitter_03_02-7b08855e14.gif)
+![AspectRatioFitter\_03\_02](/assets/media/migrated/blog/aspectratiofitter_03_02-7b08855e14-animated.webp)
 
 Envelope Parent adjusts width, height, position, and anchors so the graphic fully covers the parent. It may exceed the parent's bounds.
 
-![](/assets/migrated/blog/aspectratiofitter_04_01-c916f7ef4e.gif)
+![](/assets/media/migrated/blog/aspectratiofitter_04_01-c916f7ef4e-animated.webp)
 
 When the parent size changes, the object continues to cover it according to the ratio.
 
-![AspectRatioFitter\_04\_02](/assets/migrated/blog/aspectratiofitter_04_02-ed900c6714.gif)
+![AspectRatioFitter\_04\_02](/assets/media/migrated/blog/aspectratiofitter_04_02-ed900c6714-animated.webp)
 
 Aspect Ratio is `width / height`.
 

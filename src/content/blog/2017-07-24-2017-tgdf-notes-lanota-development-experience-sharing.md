@@ -16,7 +16,7 @@ categories:
 tags:
   []
 sourceUrl: "https://www.arkaistudio.com/blog/2017/07/24/2017-tgdf-%e7%ad%86%e8%a8%98-%e3%80%8alanota%e3%80%8b%e9%96%8b%e7%99%bc%e7%b6%93%e9%a9%97%e5%88%86%e4%ba%ab/"
-heroImage: "/assets/migrated/blog/2017-tgdf-_2-27749e3d05.jpg"
+heroImage: "/assets/media/migrated/blog/2017-tgdf-_2-27749e3d05-w750.webp"
 draft: false
 ---
 
@@ -65,7 +65,7 @@ _Chun-Chuan Tu is the founder and programmer of the independent team Noxy Games.
 
 -   2015/04 Prototype
 
-![TGDF\_Lanota\_1](/assets/migrated/blog/tgdf_lanota_1-fcd68fe83e.jpg)
+![TGDF\_Lanota\_1](/assets/media/migrated/blog/tgdf_lanota_1-fcd68fe83e-w816.webp)
 
 -   2016/07 Released
 
@@ -81,21 +81,21 @@ Saving the world through music is a strong enough hook. Simple, but it works.
 
 Core gameplay -> worldbuilding -> story, art, and music.
 
-![TGDF\_Lanota\_2](/assets/migrated/blog/tgdf_lanota_2-675668d588.jpg)
+![TGDF\_Lanota\_2](/assets/media/migrated/blog/tgdf_lanota_2-675668d588-w823.webp)
 
 ### Related designs
 
 The UI concept comes from the books carried by the young girl, strengthening the connection between interface and story.
 
-![TGDF\_Lanota\_3](/assets/migrated/blog/tgdf_lanota_3-1024x576-73fddd4071.jpg)
+![TGDF\_Lanota\_3](/assets/media/migrated/blog/tgdf_lanota_3-1024x576-73fddd4071-w1024.webp)
 
 The tuning device disk maps to the touch circle in gameplay.
 
-![TGDF\_Lanota\_4](/assets/migrated/blog/tgdf_lanota_4-1024x576-95647f7c65.jpg)
+![TGDF\_Lanota\_4](/assets/media/migrated/blog/tgdf_lanota_4-1024x576-95647f7c65-w1024.webp)
 
 The game originally had three difficulty levels. After launch, players reported that the game was too difficult, so the team adjusted the design into four difficulty levels.
 
-![TGDF\_Lanota\_5](/assets/migrated/blog/tgdf_lanota_5-1024x576-3ac1a46bb0.jpg)
+![TGDF\_Lanota\_5](/assets/media/migrated/blog/tgdf_lanota_5-1024x576-3ac1a46bb0-w1024.webp)
 
 ### Lanota chart production process
 
@@ -110,7 +110,7 @@ The game originally had three difficulty levels. After launch, players reported 
     -   Reuse code
     -   Improve production capacity and quality
 
-![TGDF\_Lanota\_6](/assets/migrated/blog/tgdf_lanota_6-de07be25b2.jpg)
+![TGDF\_Lanota\_6](/assets/media/migrated/blog/tgdf_lanota_6-de07be25b2-w627.webp)
 
 ## Attribution
 

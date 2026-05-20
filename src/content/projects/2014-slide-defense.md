@@ -9,7 +9,7 @@ projectTypes:
   - "INDIE"
   - "MOBILE"
 sourceUrl: "https://www.arkaistudio.com/blog/showcases/portfolio/slide-defense/"
-featuredImage: "/assets/migrated/projects/slidedefense_special-56a62e6294.jpg"
+featuredImage: "/assets/media/migrated/projects/slidedefense_special-56a62e6294-w640.webp"
 gallery:
   []
 videos:

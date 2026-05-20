@@ -16,7 +16,7 @@ categories:
 tags:
   []
 sourceUrl: "https://www.arkaistudio.com/blog/2016/08/02/fukushima-faust-game-jam-2016-%e5%bf%83%e5%be%97/"
-heroImage: "/assets/migrated/blog/fukushima-game-jam-2016-d089d8079d.png"
+heroImage: "/assets/media/migrated/blog/fukushima-game-jam-2016-d089d8079d-w750.webp"
 draft: false
 ---
 
@@ -101,7 +101,7 @@ program
 -   The character AI moves towards the other side when they meet each other's eyes.
 -   Connect electric effects when pairing is successful
 
-![Prototype screen](/assets/migrated/blog/prototype-_01-d72ce173dd.png)
+![Prototype screen](/assets/media/migrated/blog/prototype-_01-d72ce173dd-w1030.webp)
 
 Prototype screen.
 
@@ -135,9 +135,9 @@ Programming
 
 ### Game screenshots
 
-![Game\_00](/assets/migrated/blog/game_00-30fd8f329d.png)
+![Game\_00](/assets/media/migrated/blog/game_00-30fd8f329d-w940.webp)
 
-![Game\_01](/assets/migrated/blog/game_01-9d60417b5e.png) ![Game\_02](/assets/migrated/blog/game_02-6247290e8b.png) ![Game\_03](/assets/migrated/blog/game_03-f5712b661b.png) ![Game\_04](/assets/migrated/blog/game_04-693f216db0.png)
+![Game\_01](/assets/media/migrated/blog/game_01-9d60417b5e-w940.webp) ![Game\_02](/assets/media/migrated/blog/game_02-6247290e8b-w940.webp) ![Game\_03](/assets/media/migrated/blog/game_03-f5712b661b-w940.webp) ![Game\_04](/assets/media/migrated/blog/game_04-693f216db0-w940.webp)
 
 ### Game link
 

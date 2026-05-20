@@ -19,7 +19,7 @@ categories:
 tags:
   []
 sourceUrl: "https://www.arkaistudio.com/blog/2016/05/19/unity-ugui-%e5%8e%9f%e7%90%86%e7%af%87%e5%9b%9b%ef%bc%9aevent-system-manager-%e4%ba%8b%e4%bb%b6%e8%88%87%e8%a7%b8%e7%99%bc/"
-heroImage: "/assets/migrated/blog/special-1-a9491c6460.png"
+heroImage: "/assets/media/migrated/blog/special-1-a9491c6460-w750.webp"
 draft: false
 ---
 
@@ -55,11 +55,11 @@ draft: false
 
 When you create UI, Unity automatically creates an EventSystem object. It receives mouse, touch, and keyboard input, then dispatches events to the target objects. The default object contains [EventSystem](http://docs.unity3d.com/Manual/script-EventSystem.html), [Standalone Input Module](http://docs.unity3d.com/Manual/script-StandaloneInputModule.html), and [Touch Input Module](http://docs.unity3d.com/Manual/script-TouchInputModule.html).
 
-![](/assets/migrated/blog/event-system_02-ce4c9759d8.png)
+![](/assets/media/migrated/blog/event-system_02-ce4c9759d8-w453.webp)
 
 ### [Event System Manager](http://docs.unity3d.com/Manual/script-EventSystem.html)
 
-#### ![](/assets/migrated/blog/event-system_03-f16d6244fb.png)
+#### ![](/assets/media/migrated/blog/event-system_03-f16d6244fb-w452.webp)
 
 EventSystem coordinates input modules and the currently selected object. On every `Update`, it receives input module calls and decides which module should process the current input.
 
@@ -67,7 +67,7 @@ EventSystem coordinates input modules and the currently selected object. On ever
 
 After pressing Play, select the EventSystem object. The Inspector shows the selected object, pointer position, event camera, and related event state.
 
-![](/assets/migrated/blog/event-system_04-9d4b7e92c0.png)
+![](/assets/media/migrated/blog/event-system_04-9d4b7e92c0-w452.webp)
 
 #### First Selected
 
@@ -77,11 +77,11 @@ The object selected when execution starts. For example, if this points to an Inp
 
 Controls whether UI navigation is enabled. Navigation uses keyboard directions plus Cancel (`Esc`) and Submit (`Enter`). If a screen has several menu buttons, [Navigation Options](http://docs.unity3d.com/Manual/script-SelectableNavigation.html) can explicitly define which object should be selected when the player presses each direction.
 
-#### ![](/assets/migrated/blog/event-system_05-a6943ff25c.png)
+#### ![](/assets/media/migrated/blog/event-system_05-a6943ff25c-w436.webp)
 
 `Visualize` draws yellow lines showing the configured navigation links.
 
-#### ![Event System\_06](/assets/migrated/blog/event-system_06-1f2cea1a18.png)
+#### ![Event System\_06](/assets/media/migrated/blog/event-system_06-1f2cea1a18-w454.webp)
 
 #### Drag Threshold
 
@@ -89,7 +89,7 @@ Drag event sensitivity. Lower values make drag detection more sensitive.
 
 ### [Standalone Input Module](http://docs.unity3d.com/Manual/script-StandaloneInputModule.html)
 
-![](/assets/migrated/blog/event-system_07-f64c7fd9b4.png)
+![](/assets/media/migrated/blog/event-system_07-f64c7fd9b4-w453.webp)
 
 Standalone Input Module handles desktop input, mainly mouse and keyboard. It uses Raycasters in the Scene to determine which element has been clicked, then dispatches the corresponding event.
 
@@ -134,7 +134,7 @@ Mouse input:
 
 ### [Touch Input Module](http://docs.unity3d.com/Manual/script-TouchInputModule.html)
 
-![Event System\_08](/assets/migrated/blog/event-system_08-69084be8bb.png)
+![Event System\_08](/assets/media/migrated/blog/event-system_08-69084be8bb-w451.webp)
 
 Touch Input Module is mainly used on mobile devices. It responds to touch and drag input, then uses Raycasters in the Scene to determine the target element and dispatch events. Its process is similar to mouse input in Standalone Input Module; treat a mouse click as a touch for the mental model.
 
@@ -151,7 +151,7 @@ Touch Input Module is mainly used on mobile devices. It responds to touch and dr
 
 Component path: `Component -> Event -> Graphic Raycaster`.
 
-![](/assets/migrated/blog/graphicraycaster_01-a7cb0ee17e.png)
+![](/assets/media/migrated/blog/graphicraycaster_01-a7cb0ee17e-w456.webp)
 
 Graphic Raycaster observes graphics under a Canvas and checks whether the pointer hits them. A raycast projects an invisible line from a position in a direction, then checks what it intersects. Unity already has a [raycasting explanation](https://unity3d.com/learn/tutorials/modules/beginner/physics/raycasting); here it is used to detect UI hits.
 
@@ -168,11 +168,11 @@ These settings matter mainly when Canvas Render Mode uses World Space or Screen 
 
 For example, if a Button overlaps a Cube and no blocking is configured, clicking the overlap still triggers the Button.
 
-#### ![GraphicRaycaster\_02](/assets/migrated/blog/graphicraycaster_02-5f1241458d.gif)
+#### ![GraphicRaycaster\_02](/assets/media/migrated/blog/graphicraycaster_02-5f1241458d-animated.webp)
 
 If the Cube's Layer is changed to `Test01`, Blocked Objects is set to `Three D`, and Blocking Mask only includes `Test01`, the Cube blocks the ray. The Button no longer receives the event.
 
-#### ![GraphicRaycaster\_03](/assets/migrated/blog/graphicraycaster_03-d01b559b12.gif)
+#### ![GraphicRaycaster\_03](/assets/media/migrated/blog/graphicraycaster_03-d01b559b12-animated.webp)
 
 
 
@@ -187,7 +187,7 @@ Example setup:
 1.  Create an EventSystem: `GameObject -> UI -> EventSystem`.
 2.  Add a Physics Raycaster component to the Camera.
 
-#### ![](/assets/migrated/blog/physics-raycaster_01-66a892e6d9.png)
+#### ![](/assets/media/migrated/blog/physics-raycaster_01-66a892e6d9-w454.webp)
 
 3.  Implement the Event Interface. There are two approaches: implement the interface directly in a script, or use [Event Trigger Component](http://docs.unity3d.com/Manual/script-EventTrigger.html).
 
@@ -216,11 +216,11 @@ Lines 6-8: implement the handler and receive [PointerEventData](http://docs.unit
 
 Create a 3D object, named `Cube` here, and add a BoxCollider component.
 
-![](/assets/migrated/blog/physics-raycaster_02-8e969ffd3c.png)
+![](/assets/media/migrated/blog/physics-raycaster_02-8e969ffd3c-w450.webp)
 
 Add the script to the Cube. The Inspector shows the events intercepted by the component.
 
-#### ![](/assets/migrated/blog/physics-raycaster_03-4e317ebf1d.png)
+#### ![](/assets/media/migrated/blog/physics-raycaster_03-4e317ebf1d-w450.webp)
 
 Clicking the Cube now calls `OnPointerDown` and passes in event data.
 
@@ -262,7 +262,7 @@ Lines 6-18: define three method signatures that can be called from Event Trigger
 
 Create a 3D object, named `Cube` here, and add a BoxCollider component.
 
-![](/assets/migrated/blog/physics-raycaster_04-2db2bc6743.png)
+![](/assets/media/migrated/blog/physics-raycaster_04-2db2bc6743-w450.webp)
 
 Add the script to the Cube, then add an [Event Trigger component](http://docs.unity3d.com/Manual/script-EventTrigger.html). Event Trigger receives events from EventSystem and calls configured methods.
 
@@ -270,7 +270,7 @@ Component path: `Component -> Event -> Event Trigger`.
 
 Click `Add New Event Type` and choose the event type. This example uses `PointerDown`.
 
-![](/assets/migrated/blog/physics-raycaster_05-ab771fbb2f.png)
+![](/assets/media/migrated/blog/physics-raycaster_05-ab771fbb2f-w566.webp)
 
 Unity then adds a UnityEvent entry. UnityEvents let you configure, through the editor, which methods or properties should be called when an event fires.
 
@@ -282,7 +282,7 @@ After clicking the `+` button, drag in the Scene GameObject that should receive 
 
 Drag the GameObject into the Cube Event Trigger and assign the three script methods.
 
-![Physics Raycaster\_06](/assets/migrated/blog/physics-raycaster_06-d179d71392.png)
+![Physics Raycaster\_06](/assets/media/migrated/blog/physics-raycaster_06-d179d71392-w452.webp)
 
 Clicking the Cube now triggers `PointerDown` and calls the three configured methods.
 

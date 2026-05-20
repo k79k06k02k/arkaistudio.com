@@ -19,7 +19,7 @@ categories:
 tags:
   []
 sourceUrl: "https://www.arkaistudio.com/blog/2017/06/19/2017-unity-%e9%96%8b%e7%99%bc%e8%80%85%e5%a4%a7%e6%9c%83-%e6%9c%83%e5%be%8c%e7%ad%86%e8%a8%98/"
-heroImage: "/assets/migrated/blog/2017-unity-_5-b533e21a3e.jpg"
+heroImage: "/assets/media/migrated/blog/2017-unity-_5-b533e21a3e-w750.webp"
 draft: false
 ---
 

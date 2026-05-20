@@ -19,7 +19,7 @@ categories:
 tags:
   []
 sourceUrl: "https://www.arkaistudio.com/blog/2016/05/02/unity-ugui-%e5%8e%9f%e7%90%86%e7%af%87%e4%b8%89%ef%bc%9arecttransform/"
-heroImage: "/assets/migrated/blog/special-1-a9491c6460.png"
+heroImage: "/assets/media/migrated/blog/special-1-a9491c6460-w750.webp"
 draft: false
 ---
 
@@ -53,13 +53,13 @@ draft: false
 
 ### RectTransform
 
-![RectTransform\_01](/assets/migrated/blog/recttransform_01-cfede66183.png)
+![RectTransform\_01](/assets/media/migrated/blog/recttransform_01-cfede66183-w378.webp)
 
 RectTransform is the UI-space counterpart of Transform. A Transform represents a point in space; a RectTransform represents a 2D rectangle. When both parent and child objects use RectTransform, the child can define its position and size relative to the parent's rectangle. In practice, RectTransform defines UI position, rotation, and size.
 
 ### Anchor
 
-![Anchor\_01](/assets/migrated/blog/anchor_01-def97264fa.png)
+![Anchor\_01](/assets/media/migrated/blog/anchor_01-def97264fa-w378.webp)
 
 Anchors define how a child UI element aligns to its parent. When both parent and child have RectTransform, the child uses Anchor Min and Anchor Max to describe its relationship to the parent rectangle. In the Scene view, the anchors appear as four small triangles around the object.
 
@@ -71,7 +71,7 @@ Anchor Max
 
 The upper-right alignment point of the object.
 
-### ![](/assets/migrated/blog/anchor_03-07e47604ea.png)
+### ![](/assets/media/migrated/blog/anchor_03-07e47604ea-w873.webp)
 
 
 
@@ -79,29 +79,29 @@ The upper-right alignment point of the object.
 
 When you drag the four anchor triangles, Unity shows proportional values. Those values describe how the child scales within the parent.
 
-###  ![](/assets/migrated/blog/anchor_06-ba948d7cd3.png)
+###  ![](/assets/media/migrated/blog/anchor_06-ba948d7cd3-w783.webp)
 
 Suppose an Image under a Canvas has both Anchor Min and Anchor Max set to `(0.5, 0.5)`, as shown on the left. If Anchor Min changes to `(0.3, 0.5)` and Anchor Max changes to `(0.5, 0.7)`, the Inspector changes how it displays position and size.
 
-![Anchor\_15](/assets/migrated/blog/anchor_15-d0a94fbe75.png)
+![Anchor\_15](/assets/media/migrated/blog/anchor_15-d0a94fbe75-w866.webp)
 
 When both anchors are at the same point, Unity shows coordinates and size. When the anchors define a rectangle, Unity shows the distances to that anchor rectangle instead.
 
-![](/assets/migrated/blog/anchor_17-adde201bee.png)
+![](/assets/media/migrated/blog/anchor_17-adde201bee-w735.webp)
 
 Here are a few examples.
 
 If five Images under a Canvas use Anchor Min and Anchor Max `(0.5, 0.5)`, each object aligns to the center of the parent. When the parent size changes, they stay centered.
 
-![](/assets/migrated/blog/anchor_08-d6bdab0b3a.gif)
+![](/assets/media/migrated/blog/anchor_08-d6bdab0b3a-animated.webp)
 
 If an Image uses Anchor Min and Anchor Max `(0.0, 1.0)`, it aligns to the upper-left corner of the parent and stays fixed there as the parent size changes.
 
-![Anchor\_09](/assets/migrated/blog/anchor_09-1729100d2f.gif)
+![Anchor\_09](/assets/media/migrated/blog/anchor_09-1729100d2f-animated.webp)
 
 If Anchor Min is `(0.0, 0.0)` and Anchor Max is `(1.0, 0.0)`, the object aligns to both lower corners. Its width changes with the parent.
 
-![Anchor\_10](/assets/migrated/blog/anchor_10-94ef94f5a4.gif)
+![Anchor\_10](/assets/media/migrated/blog/anchor_10-94ef94f5a4-animated.webp)
 
 These examples show the important rule: child UI elements update their position and size based on their anchor relationship to the parent.
 
@@ -109,7 +109,7 @@ These examples show the important rule: child UI elements update their position 
 
 Parent Size is `(400, 350)`. Image Size is `(120, 105)`. Anchor Min is `(0.2, 0.5)`, and Anchor Max is `(0.5, 0.8)`.
 
-![](/assets/migrated/blog/anchor_12-29a223f7c9.png)
+![](/assets/media/migrated/blog/anchor_12-29a223f7c9-w971.webp)
 
 #### Parent Size half time value
 
@@ -123,7 +123,7 @@ Anchor Min remains `(0.2, 0.5)`, and Anchor Max remains `(0.5, 0.8)`. Because th
 
 #### Anchor Presets
 
-![AnchorPresets\_01](/assets/migrated/blog/anchorpresets_01-93396bf328.png)
+![AnchorPresets\_01](/assets/media/migrated/blog/anchorpresets_01-93396bf328-w429.webp)
 
 Click the upper-left square in the RectTransform inspector to open Anchor Presets. It lists common anchor configurations for quick use. Hold Shift to change the Pivot at the same time. Hold Alt to change the position at the same time.
 
@@ -131,19 +131,19 @@ Click the upper-left square in the RectTransform inspector to open Anchor Preset
 
 Pivot is the object's own center of operation. It affects rotation, scaling, and position. To edit UI Pivot in the Scene view, enable the Pivot button in the toolbar.
 
-![Pivot\_01](/assets/migrated/blog/pivot_01-ad207ecaae.png)
+![Pivot\_01](/assets/media/migrated/blog/pivot_01-ad207ecaae-w326.webp)
 
 Pivot `(0.5, 0.5)`:
 
-![Pivot\_02](/assets/migrated/blog/pivot_02-88cf884787.gif)
+![Pivot\_02](/assets/media/migrated/blog/pivot_02-88cf884787-animated.webp)
 
 Pivot `(0, 1)`:
 
-![Pivot\_03](/assets/migrated/blog/pivot_03-01f53964d6.gif)
+![Pivot\_03](/assets/media/migrated/blog/pivot_03-01f53964d6-animated.webp)
 
 ### Blue Print Mode, Raw Edit Mode
 
-## ![BluePrint\_RawEdit\_01](/assets/migrated/blog/blueprint_rawedit_01-5741a6f475.png)
+## ![BluePrint\_RawEdit\_01](/assets/media/migrated/blog/blueprint_rawedit_01-5741a6f475-w378.webp)
 
 
 
@@ -151,7 +151,7 @@ Pivot `(0, 1)`:
 
 Blueprint Mode ignores the object's Local Rotation and Local Scale, making it easier to adjust the UI element as if it were still in its original rotation and size.
 
-![](/assets/migrated/blog/blueprintmode_m2-1024x711-319a12e5af.png)
+![](/assets/media/migrated/blog/blueprintmode_m2-1024x711-319a12e5af-w1024.webp)
 
 #### Raw Edit Mode
 
@@ -159,11 +159,11 @@ Raw Edit Mode keeps the current position and size values when you edit Pivot and
 
 Adjusting Pivot in the Inspector:
 
-![RawEditMode\_02](/assets/migrated/blog/raweditmode_02-94669a7d75.gif)
+![RawEditMode\_02](/assets/media/migrated/blog/raweditmode_02-94669a7d75-animated.webp)
 
 Adjusting Anchor in the Inspector:
 
-![RawEditMode\_01](/assets/migrated/blog/raweditmode_01-49f7436dc4.gif)
+![RawEditMode\_01](/assets/media/migrated/blog/raweditmode_01-49f7436dc4-animated.webp)
 
 ### References
 

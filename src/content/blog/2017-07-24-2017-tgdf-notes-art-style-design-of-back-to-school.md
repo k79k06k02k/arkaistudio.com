@@ -16,7 +16,7 @@ categories:
 tags:
   []
 sourceUrl: "https://www.arkaistudio.com/blog/2017/07/24/2017-tgdf-%e7%ad%86%e8%a8%98-%e3%80%8a%e8%bf%94%e6%a0%a1%e3%80%8b%e7%be%8e%e8%a1%93%e9%a2%a8%e6%a0%bc%e8%a8%ad%e8%a8%88/"
-heroImage: "/assets/migrated/blog/2017-tgdf-_2-27749e3d05.jpg"
+heroImage: "/assets/media/migrated/blog/2017-tgdf-_2-27749e3d05-w750.webp"
 draft: false
 ---
 
@@ -60,19 +60,19 @@ Campus horror built around Taiwanese cultural and historical elements.
 
 Early Detention style explorations:
 
-![TGDF 1](/assets/migrated/blog/tgdf__1-1c00a81f26.jpg)
+![TGDF 1](/assets/media/migrated/blog/tgdf__1-1c00a81f26-w859.webp)
 
 The team tested campus imagery, horror tone, and distinctive visual motifs.
 
-![TGDF 2](/assets/migrated/blog/tgdf__2-301d847fdd.jpg)
+![TGDF 2](/assets/media/migrated/blog/tgdf__2-301d847fdd-w814.webp)
 
 Character style:
 
-![TGDF 3](/assets/migrated/blog/tgdf__3-30875d5ccf.jpg)
+![TGDF 3](/assets/media/migrated/blog/tgdf__3-30875d5ccf-w785.webp)
 
 Story theme and historical context shaped the art direction. Theme affects art; art reinforces theme.
 
-![TGDF 4](/assets/migrated/blog/tgdf__4-b9d2f1ec6c.jpg)
+![TGDF 4](/assets/media/migrated/blog/tgdf__4-b9d2f1ec6c-w808.webp)
 
 -   Distinctive: fresh, memorable, and recognizable.
 -   Atmosphere: horror, oppression, and emotional resonance.
@@ -82,31 +82,31 @@ Story theme and historical context shaped the art direction. Theme affects art; 
 
 ### Process
 
-![TGDF 5](/assets/migrated/blog/tgdf__5-94682eff98.jpg) ![TGDF 6](/assets/migrated/blog/tgdf__6-4cf788f3b6.jpg)
+![TGDF 5](/assets/media/migrated/blog/tgdf__5-94682eff98-w824.webp) ![TGDF 6](/assets/media/migrated/blog/tgdf__6-4cf788f3b6-w839.webp)
 
 ### Art design
 
 #### Focus: remove unnecessary UI
 
-![TGDF 7](/assets/migrated/blog/tgdf__7-b61451f96f.jpg) ![TGDF 8](/assets/migrated/blog/tgdf__8-98e30638a5.jpg)
+![TGDF 7](/assets/media/migrated/blog/tgdf__7-b61451f96f-w821.webp) ![TGDF 8](/assets/media/migrated/blog/tgdf__8-98e30638a5-w716.webp)
 
 #### Spatial memory
 
 Because the game has no map, each space needs memorable visual anchors.
 
-![TGDF 9](/assets/migrated/blog/tgdf__9-ed3ec82564.jpg) ![TGDF 10](/assets/migrated/blog/tgdf__10-238bd3af0a.jpg) ![TGDF 11](/assets/migrated/blog/tgdf__11-ec368b7e5a.jpg)
+![TGDF 9](/assets/media/migrated/blog/tgdf__9-ed3ec82564-w836.webp) ![TGDF 10](/assets/media/migrated/blog/tgdf__10-238bd3af0a-w802.webp) ![TGDF 11](/assets/media/migrated/blog/tgdf__11-ec368b7e5a-w782.webp)
 
 ### Chapters and Topics
 
-![TGDF 12](/assets/migrated/blog/tgdf__12-5be451a0a1.jpg)
+![TGDF 12](/assets/media/migrated/blog/tgdf__12-5be451a0a1-w813.webp)
 
 ### Game color thumbnails
 
-![TGDF 13](/assets/migrated/blog/tgdf__13-4bcea36c87.jpg)
+![TGDF 13](/assets/media/migrated/blog/tgdf__13-4bcea36c87-w910.webp)
 
 ### Unique portrait style
 
-![TGDF 14](/assets/migrated/blog/tgdf__14-8e6a328d35.jpg)
+![TGDF 14](/assets/media/migrated/blog/tgdf__14-8e6a328d35-w850.webp)
 
 ## Attribution
 

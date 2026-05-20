@@ -9,7 +9,7 @@ projectTypes:
   - "OPEN SOURCE"
   - "UNITY"
 sourceUrl: "https://www.arkaistudio.com/blog/showcases/portfolio/client-database-tool/"
-featuredImage: "/assets/migrated/projects/client_database_tool_1-16c5871cf2.png"
+featuredImage: "/assets/media/migrated/projects/client_database_tool_1-16c5871cf2-w750.webp"
 gallery:
   []
 videos:
@@ -27,4 +27,4 @@ A local data table tool for reading designer Excel sheets and generating matchin
 -   Built as a Unity tool.
 -   Developed with Unity 5.3.6f1.
 
-[![](/assets/migrated/projects/github-badge-0c6e072891.png)](https://github.com/k79k06k02k/ClientDataBase)
+[![](/assets/media/migrated/projects/github-badge-0c6e072891-w300.webp)](https://github.com/k79k06k02k/ClientDataBase)

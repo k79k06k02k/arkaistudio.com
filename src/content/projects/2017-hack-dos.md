@@ -9,7 +9,7 @@ projectTypes:
   - "INDIE"
   - "MOBILE"
 sourceUrl: "https://www.arkaistudio.com/blog/showcases/portfolio/hack-dos/"
-featuredImage: "/assets/migrated/projects/hack_dos_special-d75c938d8b.jpg"
+featuredImage: "/assets/media/migrated/projects/hack_dos_special-d75c938d8b-w545.webp"
 gallery:
   []
 videos:
@@ -33,4 +33,4 @@ draft: false
 -   Integrated music and sound effects.
 -   Integrated deltaDNA analytics.
 
-[![](/assets/migrated/projects/google-play-badge-300x116-f1e396fa88.png)](https://play.google.com/store/apps/details?id=com.twinklerocket.hackdos)
+[![](/assets/media/migrated/projects/google-play-badge-300x116-f1e396fa88-w300.webp)](https://play.google.com/store/apps/details?id=com.twinklerocket.hackdos)

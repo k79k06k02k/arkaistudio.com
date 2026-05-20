@@ -19,7 +19,7 @@ categories:
 tags:
   []
 sourceUrl: "https://www.arkaistudio.com/blog/2016/07/08/%e5%bf%ab%e9%80%9f%e9%96%8b%e7%99%bc%e5%b0%8f%e8%a8%a3%e7%ab%85%e4%ba%8c%ef%bc%9a%e5%bd%88%e6%80%a7%e4%bf%ae%e6%94%b9%e5%a4%9a%e5%80%8b%e7%89%a9%e9%ab%94/"
-heroImage: "/assets/migrated/blog/2171e8f9b6-2171e8f9b6.png"
+heroImage: "/assets/media/migrated/blog/2171e8f9b6-2171e8f9b6-w750.webp"
 draft: false
 ---
 
@@ -62,7 +62,7 @@ Requirement, simplified for the example:
 
 Start with this hierarchy:
 
-![Demand\_01](/assets/migrated/blog/demand_01-54e1143efa.png)
+![Demand\_01](/assets/media/migrated/blog/demand_01-54e1143efa-w202.webp)
 
 Implement an editor script.
 
@@ -170,11 +170,11 @@ Lines 20-21: Create the child object and set its parent.
 
 Run the menu item.
 
-![Demand\_03](/assets/migrated/blog/demand_03-e486d3b012.png)
+![Demand\_03](/assets/media/migrated/blog/demand_03-e486d3b012-w513.webp)
 
 Result:
 
-![Demand\_02](/assets/migrated/blog/demand_02-45284ebb74.png)
+![Demand\_02](/assets/media/migrated/blog/demand_02-45284ebb74-w166.webp)
 
 ### Postscript
 

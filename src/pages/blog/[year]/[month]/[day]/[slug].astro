@@ -1,6 +1,7 @@
 ---
 import { getCollection, render } from "astro:content";
 import BaseLayout from "../../../../../layouts/BaseLayout.astro";
+import ResponsiveImage from "../../../../../components/ResponsiveImage.astro";
 import { formatDate } from "../../../../../utils/content";
 
 export async function getStaticPaths() {
@@ -43,7 +44,14 @@ const { Content } = await render(post);
     </header>
     {
       post.data.heroImage && (
-        <img class="article-hero-image" src={post.data.heroImage} alt="" loading="eager" />
+        <ResponsiveImage
+          class="article-hero-image"
+          src={post.data.heroImage}
+          alt=""
+          loading="eager"
+          sizes="(min-width: 860px) 760px, calc(100vw - 40px)"
+          fetchpriority="high"
+        />
       )
     }
     <div class="prose">

@@ -9,7 +9,7 @@ projectTypes:
   - "GAME JAM"
   - "VR"
 sourceUrl: "https://www.arkaistudio.com/blog/showcases/portfolio/tempo-fighting/"
-featuredImage: "/assets/migrated/projects/tempo_fighting_special-f232ef9c95.jpg"
+featuredImage: "/assets/media/migrated/projects/tempo_fighting_special-f232ef9c95-w1055.webp"
 gallery:
   []
 videos:

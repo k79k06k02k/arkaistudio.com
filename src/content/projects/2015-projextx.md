@@ -9,7 +9,7 @@ projectTypes:
   - "MOBILE"
   - "WORK"
 sourceUrl: "https://www.arkaistudio.com/blog/showcases/portfolio/projextx/"
-featuredImage: "/assets/migrated/projects/projextx_02-ac1d5eb9be.png"
+featuredImage: "/assets/media/migrated/projects/projextx_02-ac1d5eb9be-w550.webp"
 gallery:
   []
 videos:

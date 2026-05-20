@@ -19,7 +19,7 @@ categories:
 tags:
   []
 sourceUrl: "https://www.arkaistudio.com/blog/2016/03/25/unity-ugui-%e5%8e%9f%e7%90%86%e7%af%87-%e4%b8%80%ef%bc%9acanvas/"
-heroImage: "/assets/migrated/blog/special-1-a9491c6460.png"
+heroImage: "/assets/media/migrated/blog/special-1-a9491c6460-w750.webp"
 draft: false
 ---
 
@@ -64,7 +64,7 @@ Unity provides three UI render modes:
 
 #### Screen Space - Overlay
 
-![Screen Space - Overlay](/assets/migrated/blog/screen-space-overlay-78110e67ad.png) In this mode, the UI does not reference a Camera. It renders directly on top of the scene.
+![Screen Space - Overlay](/assets/media/migrated/blog/screen-space-overlay-78110e67ad-w428.webp) In this mode, the UI does not reference a Camera. It renders directly on top of the scene.
 
 -   Pixel Perfect: Makes images sharper, but adds performance cost. Heavy UI animation may become less smooth.
 -   Sort Order: Controls draw order. Higher values render in front.
@@ -73,7 +73,7 @@ Unity provides three UI render modes:
 
 #### Screen Space - Camera
 
-![Screen Space - Camera](/assets/migrated/blog/screen-space-camera-7d57d1553e.png) This mode uses a Camera as the reference and places the UI plane at a set distance in front of it. Because the UI depends on the Camera, it reacts to screen size, resolution, and frustum changes. Scene objects closer to the Camera than the UI plane can occlude the UI.
+![Screen Space - Camera](/assets/media/migrated/blog/screen-space-camera-7d57d1553e-w426.webp) This mode uses a Camera as the reference and places the UI plane at a set distance in front of it. Because the UI depends on the Camera, it reacts to screen size, resolution, and frustum changes. Scene objects closer to the Camera than the UI plane can occlude the UI.
 
 -   Render Camera: The Camera used for UI rendering.
 -   Plane Distance: The distance between the UI plane and the Camera.
@@ -84,7 +84,7 @@ Unity provides three UI render modes:
 
 #### World Space
 
-![World Space](/assets/migrated/blog/world-space-7a0ae06442.png) World Space treats the Canvas as a GameObject in world coordinates. Use it when the UI should exist as part of the 3D scene.
+![World Space](/assets/media/migrated/blog/world-space-7a0ae06442-w430.webp) World Space treats the Canvas as a GameObject in world coordinates. Use it when the UI should exist as part of the 3D scene.
 
 -   Event Camera: The Camera that handles UI events such as click and drag. Only the assigned Camera can trigger those events.
 

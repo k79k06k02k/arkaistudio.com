@@ -885,7 +885,8 @@ main {
     var(--surface-raised);
 }
 
-.project-card[hidden] {
+.project-card[hidden],
+.list-card[hidden] {
   display: none;
 }
 

@@ -13,17 +13,69 @@ const categories = uniqueSorted(posts.flatMap((post) => post.data.categories));
   description="ARKAI Studio technical articles, Unity notes, and production writeups."
   pagefindBody={false}
 >
-  <section class="page-hero">
+  <section class="page-hero" data-blog-filter>
     <p class="eyebrow">Blog archive</p>
-    <h1>Unity systems, tools, shaders, conference notes, and production lessons.</h1>
-    <p class="lede">
-      The old WordPress archive now lives as static content under its original URL structure.
-      The articles have been translated and cleaned up for an English-first site.
-    </p>
-    <div class="tag-row">{categories.map((category) => <span>{category}</span>)}</div>
+    <h1>Technical notes archive.</h1>
+    <div class="tag-row" aria-label="Filter blog posts">
+      <button class="tag-button" type="button" data-filter-value="all" aria-pressed="true">ALL</button>
+      {
+        categories.map((category) => (
+          <button class="tag-button" type="button" data-filter-value={category.toLowerCase()} aria-pressed="false">
+            {category}
+          </button>
+        ))
+      }
+    </div>
+    <p class="sr-only" data-filter-status aria-live="polite">{posts.length} posts shown.</p>
   </section>
 
   <section class="stack archive-list">
     {posts.map((post) => <PostCard post={post} />)}
   </section>
+
+  <script>
+    const filterRoot = document.querySelector<HTMLElement>("[data-blog-filter]");
+    const archiveList = document.querySelector<HTMLElement>(".archive-list");
+
+    if (filterRoot && archiveList) {
+      const filterButtons = [...filterRoot.querySelectorAll<HTMLButtonElement>("[data-filter-value]")];
+      const postCards = [...archiveList.querySelectorAll<HTMLElement>("[data-post-card]")];
+      const status = filterRoot.querySelector<HTMLElement>("[data-filter-status]");
+      const normalize = (value: string) => value.trim().toLowerCase();
+
+      const applyFilter = (filter: string) => {
+        const activeFilter = normalize(filter);
+        const showAll = activeFilter === "all";
+        let shownCount = 0;
+
+        postCards.forEach((card) => {
+          const categories = (card.dataset.postCategories ?? "").split("|").map(normalize);
+          const shouldShow = showAll || categories.includes(activeFilter);
+          card.hidden = !shouldShow;
+
+          if (shouldShow) {
+            shownCount += 1;
+          }
+        });
+
+        filterButtons.forEach((button) => {
+          button.setAttribute("aria-pressed", String(normalize(button.dataset.filterValue ?? "") === activeFilter));
+        });
+
+        if (status) {
+          status.textContent = `${shownCount} posts shown.`;
+        }
+
+        filterRoot.dataset.activeFilter = activeFilter;
+      };
+
+      filterButtons.forEach((button) => {
+        button.addEventListener("click", () => {
+          const nextFilter = normalize(button.dataset.filterValue ?? "all");
+          const currentFilter = filterRoot.dataset.activeFilter ?? "all";
+          applyFilter(nextFilter === currentFilter && nextFilter !== "all" ? "all" : nextFilter);
+        });
+      });
+    }
+  </script>
 </BaseLayout>

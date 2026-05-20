@@ -7,9 +7,11 @@ interface Props {
 }
 
 const { post } = Astro.props;
+
+const filterCategories = post.data.categories.map((category) => category.toLowerCase()).join("|");
 ---
 
-<article class="list-card">
+<article class="list-card" data-post-card data-post-categories={filterCategories}>
   <div class="card-kicker">
     <time datetime={post.data.pubDate.toISOString()}>{formatDate(post.data.pubDate)}</time>
     {

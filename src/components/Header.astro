@@ -5,6 +5,7 @@ const nav = [
     label: "Portfolio",
     isActive: (path: string) => path.startsWith("/portfolio/"),
   },
+  { href: "/blog/", label: "Archive", isActive: (path: string) => path.startsWith("/blog/") },
   { href: "/search/", label: "Search", isActive: (path: string) => path.startsWith("/search/") },
 ];
 

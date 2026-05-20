@@ -10,13 +10,69 @@ interface Props {
 const { projects, projectTypes } = Astro.props;
 ---
 
-<section class="page-hero portfolio-hero narrow">
+<section class="page-hero portfolio-hero narrow" data-portfolio-filter>
   <p class="eyebrow">Portfolio</p>
   <h1>Selected work.</h1>
   <p class="lede">Games, tools, jams, and production systems.</p>
-  <div class="tag-row">{projectTypes.map((type) => <span>{type}</span>)}</div>
+  <div class="tag-row portfolio-filter" aria-label="Filter portfolio projects">
+    <button class="tag-button" type="button" data-filter-value="all" aria-pressed="true">ALL</button>
+    {
+      projectTypes.map((type) => (
+        <button class="tag-button" type="button" data-filter-value={type.toLowerCase()} aria-pressed="false">
+          {type}
+        </button>
+      ))
+    }
+  </div>
+  <p class="sr-only" data-filter-status aria-live="polite">{projects.length} projects shown.</p>
 </section>
 
-<section class="project-grid">
+<section class="project-grid" data-project-grid>
   {projects.map((project) => <ProjectCard project={project} />)}
 </section>
+
+<script>
+  const filterRoot = document.querySelector<HTMLElement>("[data-portfolio-filter]");
+  const projectGrid = document.querySelector<HTMLElement>("[data-project-grid]");
+
+  if (filterRoot && projectGrid) {
+    const filterButtons = [...filterRoot.querySelectorAll<HTMLButtonElement>("[data-filter-value]")];
+    const projectCards = [...projectGrid.querySelectorAll<HTMLElement>("[data-project-card]")];
+    const status = filterRoot.querySelector<HTMLElement>("[data-filter-status]");
+    const normalize = (value: string) => value.trim().toLowerCase();
+
+    const applyFilter = (filter: string) => {
+      const activeFilter = normalize(filter);
+      const showAll = activeFilter === "all";
+      let shownCount = 0;
+
+      projectCards.forEach((card) => {
+        const types = (card.dataset.projectTypes ?? "").split("|").map(normalize);
+        const shouldShow = showAll || types.includes(activeFilter);
+        card.hidden = !shouldShow;
+
+        if (shouldShow) {
+          shownCount += 1;
+        }
+      });
+
+      filterButtons.forEach((button) => {
+        button.setAttribute("aria-pressed", String(normalize(button.dataset.filterValue ?? "") === activeFilter));
+      });
+
+      if (status) {
+        status.textContent = `${shownCount} projects shown.`;
+      }
+
+      filterRoot.dataset.activeFilter = activeFilter;
+    };
+
+    filterButtons.forEach((button) => {
+      button.addEventListener("click", () => {
+        const nextFilter = normalize(button.dataset.filterValue ?? "all");
+        const currentFilter = filterRoot.dataset.activeFilter ?? "all";
+        applyFilter(nextFilter === currentFilter && nextFilter !== "all" ? "all" : nextFilter);
+      });
+    });
+  }
+</script>

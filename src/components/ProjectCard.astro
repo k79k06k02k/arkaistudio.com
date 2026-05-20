@@ -8,9 +8,11 @@ interface Props {
 
 const { project } = Astro.props;
 const href = projectPath(project.data.legacySlug);
+const projectTypes = project.data.projectTypes;
+const filterTypes = projectTypes.map((type) => type.toLowerCase()).join("|");
 ---
 
-<article class="project-card">
+<article class="project-card" data-project-card data-project-types={filterTypes}>
   <a class="project-image" href={href}>
     {
       project.data.featuredImage ? (
@@ -21,7 +23,7 @@ const href = projectPath(project.data.legacySlug);
     }
   </a>
   <div class="project-body">
-    <p class="card-kicker">{project.data.projectTypes.join(" / ")}</p>
+    <p class="card-kicker">{projectTypes.join(" / ")}</p>
     <h2><a href={href}>{project.data.title}</a></h2>
     <p>{project.data.summary}</p>
   </div>

@@ -12,17 +12,20 @@ interface Props {
   pagefindBody?: boolean;
 }
 
+const defaultOgImage = "/assets/og/arkai-studio-og.png";
+
 const {
   title = SITE.title,
   description = SITE.description,
   canonicalPath = Astro.url.pathname,
-  image = "/assets/brand/arkai-logo.png",
+  image = defaultOgImage,
   pagefindBody = true,
 } = Astro.props;
 
 const pageTitle = title === SITE.title ? SITE.title : `${title} | ${SITE.title}`;
 const canonical = new URL(canonicalPath, SITE.url);
 const ogImage = new URL(image, SITE.url);
+const usesDefaultOgImage = image === defaultOgImage;
 ---
 
 <!doctype html>
@@ -43,6 +46,9 @@ const ogImage = new URL(image, SITE.url);
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonical} />
     <meta property="og:image" content={ogImage} />
+    {usesDefaultOgImage && <meta property="og:image:type" content="image/png" />}
+    {usesDefaultOgImage && <meta property="og:image:width" content="1200" />}
+    {usesDefaultOgImage && <meta property="og:image:height" content="630" />}
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={pageTitle} />
     <meta name="twitter:description" content={description} />

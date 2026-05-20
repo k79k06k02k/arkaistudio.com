@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
-  <rect width="1200" height="630" fill="#f4f0e8"/>
-  <path d="M90 120h1020v390H90z" fill="#101010"/>
-  <path d="M150 455 340 160h92l154 295h-96l-29-62H305l-34 62H150Zm190-136h86l-39-90-47 90Z" fill="#f4f0e8"/>
-  <path d="M710 160h86v295h-86z" fill="#e6462e"/>
-  <path d="M835 160h210v74H921v36h96v70h-96v115h-86V160Z" fill="#2a8fbd"/>
-  <text x="150" y="555" font-family="Menlo, monospace" font-size="34" fill="#101010">ARKAI Studio / Game systems and AI workflows</text>
-</svg>
